@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://examplesite.com/about/</loc>
+    <lastmod>2023-02-26T05:06:56+08:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/tags/docker/</loc>
+    <lastmod>2022-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/post/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</loc>
+    <lastmod>2022-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/post/</loc>
+    <lastmod>2022-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/tags/</loc>
+    <lastmod>2022-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/</loc>
+    <lastmod>2022-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/post/2022-09-29/docker%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</loc>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/post/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</loc>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/categories/</loc>
+  </url>
+</urlset>

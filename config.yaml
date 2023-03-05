@@ -3,7 +3,6 @@ baseURL: "https://examplesite.com/"
 languageCode: 'en-Hans'
 title: '张大锅的博客'
 paginate: 5
-theme: PaperMod
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -26,7 +25,7 @@ params:
   author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
+  DateFormat: "2006-01-01"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
@@ -56,7 +55,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "张大锅"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -77,16 +76,16 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "嗨！\U0001F604"
+    Content: 博客记一些日常开发中遇到的问题以及解决方法，欢迎点击下面按钮发邮件讨论。
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
-    - name: github
-      url: "https://github.com/"
+    - name: QQ
+      url: "mailto:1210500550@qq.com"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com"
+    # - name: github
+    #   url: "https://github.com/zhang-weiming"
 
   analytics:
     google:
@@ -135,13 +134,13 @@ menu:
       url: /tags/
       weight: 20
     - identifier: about
-      name: 说明
+      name: 关于
       url: /about/
       weight: 30
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 40
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:

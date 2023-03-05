@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>博客 on 张大锅的博客</title>
+    <link>https://examplesite.com/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on 张大锅的博客</description>
+    <image>
+      <title>张大锅的博客</title>
+      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-Hans</language>
+    <lastBuildDate>Sat, 25 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://examplesite.com/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo开发博客</title>
+      <link>https://examplesite.com/post/tutorial/hugo_tutorial/</link>
+      <pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.com/post/tutorial/hugo_tutorial/</guid>
+      <description> 总结日常百度的技术知识
+记录工作中遇到的技术难题及解决方法
+&amp;hellip;
+关键目录说明
+demo案例
+博客创建工具 hugo
+新建博客仓库 hugo new site &amp;lt;仓库名&amp;gt; 关键目录说明 待补充&amp;hellip;
+demo案例 待补充&amp;hellip;
+本地起服务 # 先使用`ip a`查看本机IP ip a # 使用本机IP起服务 hugo server -D --bind 172.28.101.145 --baseURL=http://172.28.101.145 参考 Hugo中文文档 </description>
+    </item>
+    
+  </channel>
+</rss>

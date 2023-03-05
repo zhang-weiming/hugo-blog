@@ -11,13 +11,30 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-Hans</language>
-    <lastBuildDate>Tue, 04 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://examplesite.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://examplesite.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo开发博客</title>
+      <link>https://examplesite.com/post/tutorial/hugo_tutorial/</link>
+      <pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.com/post/tutorial/hugo_tutorial/</guid>
+      <description> 总结日常百度的技术知识
+记录工作中遇到的技术难题及解决方法
+&amp;hellip;
+关键目录说明
+demo案例
+博客创建工具 hugo
+新建博客仓库 hugo new site &amp;lt;仓库名&amp;gt; 关键目录说明 待补充&amp;hellip;
+demo案例 待补充&amp;hellip;
+本地起服务 # 先使用`ip a`查看本机IP ip a # 使用本机IP起服务 hugo server -D --bind 172.28.101.145 --baseURL=http://172.28.101.145 参考 Hugo中文文档 </description>
+    </item>
+    
     <item>
       <title>Docker容器重启IP不固定</title>
-      <link>https://examplesite.com/post/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</link>
+      <link>https://examplesite.com/post/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</link>
       <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.com/post/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</guid>
+      <guid>https://examplesite.com/post/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</guid>
       <description>问题描述 docker 容器重启后IP可能会变。
 问题原因解析 这里需要借助 docker 和 Linux 的网桥来给容器设置固定网络下的IP。
 docker 有默认的网桥设置，默认网桥叫 docker0，可以借助命令 drctl show 来查看，网段在172.17.0.0/16。

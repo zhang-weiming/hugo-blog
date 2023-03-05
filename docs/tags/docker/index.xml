@@ -14,10 +14,10 @@
     <lastBuildDate>Tue, 04 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://examplesite.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker容器重启IP不固定</title>
-      <link>https://examplesite.com/post/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</link>
+      <link>https://examplesite.com/post/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</link>
       <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.com/post/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</guid>
+      <guid>https://examplesite.com/post/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</guid>
       <description>问题描述 docker 容器重启后IP可能会变。
 问题原因解析 这里需要借助 docker 和 Linux 的网桥来给容器设置固定网络下的IP。
 docker 有默认的网桥设置，默认网桥叫 docker0，可以借助命令 drctl show 来查看，网段在172.17.0.0/16。

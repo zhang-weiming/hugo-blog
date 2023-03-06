@@ -33,13 +33,23 @@ hugo new site <仓库名>
 
 ### 本地起服务
 
+先使用下面的查看本机IP
+
 ``` sh
-# 先使用`ip a`查看本机IP
 ip a
-# 使用本机IP起服务
+```
+
+找到下图中红色箭头指向的IP地址：
+
+![查看本机IP](/img/tutorial/ip_a.png)
+
+使用本机IP起服务
+
+``` sh
 hugo server -D --bind 172.28.101.145 --baseURL=http://172.28.101.145
 ```
 
 ## 参考
 
 - [Hugo中文文档](https://www.gohugo.org/doc/)
+- [Hugo框架中文文档 内容管理 静态文件](https://www.andbible.com/post/hugo-content-management-static-files/)

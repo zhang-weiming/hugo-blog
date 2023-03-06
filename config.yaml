@@ -11,6 +11,12 @@ buildExpired: false
 
 publishDir: docs
 
+# 资源文件存放目录
+# staticDir: static
+# 数组写法
+staticDir:
+  - static
+
 googleAnalytics: UA-123-45
 
 minify:

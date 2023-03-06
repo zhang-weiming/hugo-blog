@@ -6,7 +6,10 @@ demo案例
 博客创建工具 hugo
 新建博客仓库 hugo new site &lt;仓库名> 关键目录说明 待补充…
 demo案例 待补充…
-本地起服务 # 先使用`ip a`查看本机IP ip a # 使用本机IP起服务 hugo server -D --bind 172.28.101.145 --baseURL=http://172.28.101.145 参考 Hugo中文文档</p></div><footer class=entry-footer><span title='2023-02-25 00:00:00 +0000 UTC'>2023-02-02</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;32 words&nbsp;·&nbsp;张大锅</footer><a class=entry-link aria-label="post link to hugo开发博客" href=https://zhang-weiming.github.io/post/tutorial/hugo_tutorial/></a></article><article class=post-entry><header class=entry-header><h2>Docker容器重启IP不固定</h2></header><div class=entry-content><p>问题描述 docker 容器重启后IP可能会变。
+本地起服务 先使用下面的查看本机IP
+ip a 找到下图中红色箭头指向的IP地址：
+使用本机IP起服务
+hugo server -D --bind 172.28.101.145 --baseURL=http://172.28.101.145 参考 Hugo中文文档 Hugo框架中文文档 内容管理 静态文件</p></div><footer class=entry-footer><span title='2023-02-25 00:00:00 +0000 UTC'>2023-02-02</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;33 words&nbsp;·&nbsp;张大锅</footer><a class=entry-link aria-label="post link to hugo开发博客" href=https://zhang-weiming.github.io/post/tutorial/hugo_tutorial/></a></article><article class=post-entry><header class=entry-header><h2>Docker容器重启IP不固定</h2></header><div class=entry-content><p>问题描述 docker 容器重启后IP可能会变。
 问题原因解析 这里需要借助 docker 和 Linux 的网桥来给容器设置固定网络下的IP。
 docker 有默认的网桥设置，默认网桥叫 docker0，可以借助命令 drctl show 来查看，网段在172.17.0.0/16。
 解决 首先创建一个 docker network # xxx.xxx.xxx.xxx/16 对应的子网掩码为 255.255.0.0 # xxx.xxx.xxx.xxx/24 对应的子网掩码为 255.255.255.0 docker network create --driver bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 mynet 下面操作二选一 停止并删除正在运行的容器，重新创建容器，在创建容器的 docker run ... 命令中加入参数 --network mynet 将某个容器加入到指定的网络中，使用命令 docker network connect &lt;networkName> &lt;containerName> 参考 Docker网络互联原理及自定义网络的使用 Docker网络 Pipework网络方案</p></div><footer class=entry-footer><span title='2022-10-04 00:00:00 +0000 UTC'>2022-10-10</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;55 words&nbsp;·&nbsp;张大锅</footer><a class=entry-link aria-label="post link to Docker容器重启IP不固定" href=https://zhang-weiming.github.io/post/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/></a></article><article class=post-entry><header class=entry-header><h2>Docker容器重启IP不固定</h2></header><div class=entry-content><p>问题描述 虚拟机里，docker 容器部署的 nacos-ruoyi 无法访问到 docker 容器部署的 mysql 数据库

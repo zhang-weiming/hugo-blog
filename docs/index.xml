@@ -35,7 +35,10 @@ demo案例
 博客创建工具 hugo
 新建博客仓库 hugo new site &amp;lt;仓库名&amp;gt; 关键目录说明 待补充&amp;hellip;
 demo案例 待补充&amp;hellip;
-本地起服务 # 先使用`ip a`查看本机IP ip a # 使用本机IP起服务 hugo server -D --bind 172.28.101.145 --baseURL=http://172.28.101.145 参考 Hugo中文文档 </description>
+本地起服务 先使用下面的查看本机IP
+ip a 找到下图中红色箭头指向的IP地址：
+使用本机IP起服务
+hugo server -D --bind 172.28.101.145 --baseURL=http://172.28.101.145 参考 Hugo中文文档 Hugo框架中文文档 内容管理 静态文件 </description>
     </item>
     
     <item>

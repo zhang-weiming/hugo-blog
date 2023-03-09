@@ -33,21 +33,21 @@ hugo new site <仓库名>
 
 ### 本地起服务
 
-先使用下面的查看本机IP
+1. 先使用下面的查看本机IP
 
-``` sh
-ip a
-```
+    ``` shell
+    ip a
+    ```
 
-找到下图中红色箭头指向的IP地址：
+2. 找到下图中红色箭头指向的IP地址：
+    
+    ![查看本机IP](/img/tutorial/ip_a.png)
 
-![查看本机IP](/img/tutorial/ip_a.png)
-
-使用本机IP起服务
-
-``` sh
-hugo server -D --bind 172.28.101.145 --baseURL=http://172.28.101.145
-```
+3. 使用本机IP起服务
+    
+    ``` shell
+    hugo server -D --bind <本机IP> --baseURL=http://<本机IP>
+    ```
 
 ## 参考
 

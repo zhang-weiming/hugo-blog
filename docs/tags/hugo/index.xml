@@ -29,7 +29,7 @@ demo案例 待补充&amp;hellip;
 本地起服务 先使用下面的查看本机IP
 ip a 找到下图中红色箭头指向的IP地址：
 使用本机IP起服务
-hugo server -D --bind 172.28.101.145 --baseURL=http://172.28.101.145 参考 Hugo中文文档 Hugo框架中文文档 内容管理 静态文件 </description>
+hugo server -D --bind &amp;lt;本机IP&amp;gt; --baseURL=http://&amp;lt;本机IP&amp;gt; 参考 Hugo中文文档 Hugo框架中文文档 内容管理 静态文件 </description>
     </item>
     
   </channel>

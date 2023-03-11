@@ -11,7 +11,24 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-Hans</language>
-    <lastBuildDate>Sat, 25 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Mar 2023 23:57:22 +0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nginx代理后，端口丢失和https变为http的问题</title>
+      <link>https://zhang-weiming.github.io/post/2023-03-09/nginx/</link>
+      <pubDate>Thu, 09 Mar 2023 23:57:22 +0800</pubDate>
+      
+      <guid>https://zhang-weiming.github.io/post/2023-03-09/nginx/</guid>
+      <description>问题现象 project服务默认使用端口80，我们通过修改配置，将其端口修改为A，并增加路由前缀/project/。
+现在，project服务访问地址为：http://x.x.x.x:A/project/。
+我们在Nginx里做了一层代理，Nginx配置如下：
+server { listen B ssl; server_name y.y.y.y; ... location /project/ { proxy_pass http://x.x.x.x:A/project/; } } 代理之后，当project服务返回302重定向时，端口就会消失，流程如下：
+访问project主页地址：http://x.x.x.x:A/project/； 查看请求信息，可以看到如下信息，说明URL重定向到了登录页面，但是丢失了端口： General: Status Code: 302 Found Response Headers： Location: https://x.x.x.x/project/signin # 这里给出的地址就是重定向后的目标地址 手动添加端口后访问页面正常：https://x.x.x.x:A/project/signin 初步尝试 最开始的解决方案是修改响应头里的Location字段。
+参考资料 Apache和Nginx自定义修改Response Header中的Location值 Nginx里Header修改 但由于改动过大，放弃了该方案。
+经过进一步查找资料，进行了如下配置。配完以后，发现端口不再丢失，但是协议从https变成了http。
+location /project/ { proxy_set_header Host $http_host; # 添加了这一行 proxy_pass http://x.x.x.x:A/project/; } 不完美解决方案 其实算是个不完整的Nginx配置，配置步骤如下：
+将请求代理到http协议的80端口； server { listen B ssl; server_name y.y.y.y; ... location /project/ { # 1、现将请求代理到http协议的B端口（内部映射到80） proxy_set_header Host $host:80; proxy_pass http://x.</description>
+    </item>
+    
     <item>
       <title>hugo开发博客</title>
       <link>https://zhang-weiming.github.io/post/tutorial/hugo_tutorial/</link>
@@ -29,7 +46,7 @@ demo案例 待补充&amp;hellip;
 本地起服务 先使用下面的查看本机IP
 ip a 找到下图中红色箭头指向的IP地址：
 使用本机IP起服务
-hugo server -D --bind 172.28.101.145 --baseURL=http://172.28.101.145 参考 Hugo中文文档 Hugo框架中文文档 内容管理 静态文件 </description>
+hugo server -D --bind &amp;lt;本机IP&amp;gt; --baseURL=http://&amp;lt;本机IP&amp;gt; 参考 Hugo中文文档 Hugo框架中文文档 内容管理 静态文件 </description>
     </item>
     
     <item>

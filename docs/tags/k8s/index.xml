@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>k8s on 张大锅的博客</title>
+    <link>https://zhang-weiming.github.io/tags/k8s/</link>
+    <description>Recent content in k8s on 张大锅的博客</description>
+    <image>
+      <title>张大锅的博客</title>
+      <url>https://zhang-weiming.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zhang-weiming.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-Hans</language>
+    <lastBuildDate>Sun, 21 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>K8S部署MySQL-5.7</title>
+      <link>https://zhang-weiming.github.io/post/mysql/2023-05-21/mysql_k8s/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhang-weiming.github.io/post/mysql/2023-05-21/mysql_k8s/</guid>
+      <description>k8s部署MySQL 5.7 ConfigMap apiVersion: v1 kind: ConfigMap metadata: name: mysql-config namespace: mysql labels: app: mysql data: my.cnf: |- [client] default-character-set=utf8mb4 [mysql] default-character-set=utf8mb4 [mysqld] character-set-server = utf8mb4 collation-server = utf8mb4_unicode_ci init_connect=&amp;#39;SET NAMES utf8mb4&amp;#39; skip-character-set-client-handshake = true max_connections=2000 secure_file_priv=/var/lib/mysql bind-address=0.0.0.0 symbolic-links=0 sql_mode=&amp;#39;STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION&amp;#39; Service apiVersion: v1 kind: Service metadata: labels: app: mysql name: mysql-svc namespace: mysql spec: type: NodePort ports: - name: http port: 3306 protocol: TCP targetPort: 3306 selector: app: mysql Deployment apiVersion: apps/v1 kind: Deployment metadata: name: mysql namespace: mysql spec: replicas: 1 selector: matchLabels: app: mysql template: metadata: labels: app: mysql spec: containers: - args: - --datadir - /var/lib/mysql/datadir env: - name: MYSQL_ROOT_PASSWORD value: root - name: MYSQL_USER value: user - name: MYSQL_PASSWORD value: user image: mysql:5.</description>
+    </item>
+    
+    <item>
+      <title>K8S部署Redis-3.0.7</title>
+      <link>https://zhang-weiming.github.io/post/redis/2023-05-23/redis_k8s/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhang-weiming.github.io/post/redis/2023-05-23/redis_k8s/</guid>
+      <description>k8s部署redis 3.0.7 Deployment apiVersion: apps/v1 kind: Deployment metadata: name: redis labels: app: redis spec: replicas: 1 selector: matchLabels: app: redis template: metadata: labels: app: redis spec: containers: - name: redis image: redis:3.0.7 command: - &amp;#34;sh&amp;#34; - &amp;#34;-c&amp;#34; - &amp;#34;redis-server /usr/local/redis/redis.conf&amp;#34; ports: - containerPort: 6379 resources: limits: cpu: 1000m memory: 1024Mi requests: cpu: 1000m memory: 1024Mi livenessProbe: tcpSocket: port: 6379 initialDelaySeconds: 300 timeoutSeconds: 1 periodSeconds: 10 successThreshold: 1 failureThreshold: 3 readinessProbe: tcpSocket: port: 6379 initialDelaySeconds: 5 timeoutSeconds: 1 periodSeconds: 10 successThreshold: 1 failureThreshold: 3 volumeMounts: - name: config mountPath: /usr/local/redis/redis.</description>
+    </item>
+    
+  </channel>
+</rss>

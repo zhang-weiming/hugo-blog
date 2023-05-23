@@ -11,13 +11,42 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-Hans</language>
-    <lastBuildDate>Thu, 09 Mar 2023 23:57:22 +0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql执行较大sql脚本导致服务器跟目录占满</title>
+      <link>https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/</guid>
+      <description>2023-05-22 问题描述 删除一个较大体量的数据库后，发现mysql无法正常执行sql脚本，并给出以下报错：
+[error]/tmp/ib1tJjCi file has no space left 同时，发现服务器磁盘根目录满了！
+[root@template ~]# df -h Filesystem Size Used Avail Use% Mounted on /dev/vda3 16G 15G 20K 100% / devtmpfs 32G 0 32G 0% /dev tmpfs 32G 0 32G 0% /dev/shm tmpfs 32G 3.3G 29G 11% /run tmpfs 32G 0 32G 0% /sys/fs/cgroup /dev/mapper/data-data_lv 600G 21G 579G 4% /data /dev/vda1 497M 123M 375M 25% /boot tmpfs 6.3G 0 6.3G 0% /run/user/1002 问题定位 执行命令：</description>
+    </item>
+    
+    <item>
+      <title>K8S部署MySQL-5.7</title>
+      <link>https://zhang-weiming.github.io/post/mysql/2023-05-21/mysql_k8s/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhang-weiming.github.io/post/mysql/2023-05-21/mysql_k8s/</guid>
+      <description>k8s部署MySQL 5.7 ConfigMap apiVersion: v1 kind: ConfigMap metadata: name: mysql-config namespace: mysql labels: app: mysql data: my.cnf: |- [client] default-character-set=utf8mb4 [mysql] default-character-set=utf8mb4 [mysqld] character-set-server = utf8mb4 collation-server = utf8mb4_unicode_ci init_connect=&amp;#39;SET NAMES utf8mb4&amp;#39; skip-character-set-client-handshake = true max_connections=2000 secure_file_priv=/var/lib/mysql bind-address=0.0.0.0 symbolic-links=0 sql_mode=&amp;#39;STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION&amp;#39; Service apiVersion: v1 kind: Service metadata: labels: app: mysql name: mysql-svc namespace: mysql spec: type: NodePort ports: - name: http port: 3306 protocol: TCP targetPort: 3306 selector: app: mysql Deployment apiVersion: apps/v1 kind: Deployment metadata: name: mysql namespace: mysql spec: replicas: 1 selector: matchLabels: app: mysql template: metadata: labels: app: mysql spec: containers: - args: - --datadir - /var/lib/mysql/datadir env: - name: MYSQL_ROOT_PASSWORD value: root - name: MYSQL_USER value: user - name: MYSQL_PASSWORD value: user image: mysql:5.</description>
+    </item>
+    
+    <item>
+      <title>K8S部署Redis-3.0.7</title>
+      <link>https://zhang-weiming.github.io/post/redis/2023-05-23/redis_k8s/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhang-weiming.github.io/post/redis/2023-05-23/redis_k8s/</guid>
+      <description>k8s部署redis 3.0.7 Deployment apiVersion: apps/v1 kind: Deployment metadata: name: redis labels: app: redis spec: replicas: 1 selector: matchLabels: app: redis template: metadata: labels: app: redis spec: containers: - name: redis image: redis:3.0.7 command: - &amp;#34;sh&amp;#34; - &amp;#34;-c&amp;#34; - &amp;#34;redis-server /usr/local/redis/redis.conf&amp;#34; ports: - containerPort: 6379 resources: limits: cpu: 1000m memory: 1024Mi requests: cpu: 1000m memory: 1024Mi livenessProbe: tcpSocket: port: 6379 initialDelaySeconds: 300 timeoutSeconds: 1 periodSeconds: 10 successThreshold: 1 failureThreshold: 3 readinessProbe: tcpSocket: port: 6379 initialDelaySeconds: 5 timeoutSeconds: 1 periodSeconds: 10 successThreshold: 1 failureThreshold: 3 volumeMounts: - name: config mountPath: /usr/local/redis/redis.</description>
+    </item>
+    
     <item>
       <title>Nginx代理后，端口丢失和https变为http的问题</title>
-      <link>https://zhang-weiming.github.io/post/2023-03-09/nginx/</link>
+      <link>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</link>
       <pubDate>Thu, 09 Mar 2023 23:57:22 +0800</pubDate>
       
-      <guid>https://zhang-weiming.github.io/post/2023-03-09/nginx/</guid>
+      <guid>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</guid>
       <description>问题现象 project服务默认使用端口80，我们通过修改配置，将其端口修改为A，并增加路由前缀/project/。
 现在，project服务访问地址为：http://x.x.x.x:A/project/。
 我们在Nginx里做了一层代理，Nginx配置如下：
@@ -30,12 +59,45 @@ location /project/ { proxy_set_header Host $http_host; # 添加了这一行 prox
     </item>
     
     <item>
-      <title>hugo开发博客</title>
+      <title>Docker容器重启IP不固定</title>
+      <link>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</link>
+      <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</guid>
+      <description>问题描述 docker 容器重启后IP可能会变。
+问题原因解析 这里需要借助 docker 和 Linux 的网桥来给容器设置固定网络下的IP。
+docker 有默认的网桥设置，默认网桥叫 docker0，可以借助命令 drctl show 来查看，网段在172.17.0.0/16。
+解决 首先创建一个 docker network # xxx.xxx.xxx.xxx/16 对应的子网掩码为 255.255.0.0 # xxx.xxx.xxx.xxx/24 对应的子网掩码为 255.255.255.0 docker network create --driver bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 mynet 下面操作二选一 停止并删除正在运行的容器，重新创建容器，在创建容器的 docker run ... 命令中加入参数 --network mynet 将某个容器加入到指定的网络中，使用命令 docker network connect &amp;lt;networkName&amp;gt; &amp;lt;containerName&amp;gt; 参考 Docker网络互联原理及自定义网络的使用 Docker网络 Pipework网络方案 </description>
+    </item>
+    
+    <item>
+      <title>Docker容器重启IP不固定</title>
+      <link>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</guid>
+      <description>问题描述 虚拟机里，docker 容器部署的 nacos-ruoyi 无法访问到 docker 容器部署的 mysql 数据库
+问题原因解析 这个问题是由 docker 本身的网络设置导致的。
+安装docker时，docker会默认创建一个内部的桥接网络docker0，见下方样例。每创建一个容器分配一个虚拟网卡，容器之间可以根据ip互相访问。
+[root@33fcf82ab4dd /]# [root@CentOS ~]# ifconfig ...... docker0: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt; mtu 1500 inet 172.17.0.1 netmask 255.255.0.0 broadcast 0.0.0.0 inet6 fe80::42:41ff:fe93:7102 prefixlen 64 scopeid 0x20&amp;lt;link&amp;gt; ether 02:42:41:93:71:02 txqueuelen 0 (Ethernet) RX packets 9374 bytes 737420 (720.1 KiB) RX errors 0 dropped 0 overruns 0 frame 0 TX packets 10553 bytes 171557354 (163.6 MiB) TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0 .</description>
+    </item>
+    
+    <item>
+      <title>Docker服务启动时，容器自动被拉起</title>
+      <link>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zhang-weiming.github.io/post/tutorial/hugo_tutorial/</link>
-      <pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zhang-weiming.github.io/post/tutorial/hugo_tutorial/</guid>
-      <description> 总结日常百度的技术知识
+      <description>:wq&amp;mdash; title: &amp;ldquo;hugo开发博客&amp;rdquo; date: 2023-02-25 draft: false tags: [&amp;ldquo;hugo&amp;rdquo;, &amp;ldquo;博客&amp;rdquo;] author: &amp;ldquo;张大锅&amp;rdquo; 总结日常百度的技术知识
 记录工作中遇到的技术难题及解决方法
 &amp;hellip;
 关键目录说明
@@ -47,39 +109,6 @@ demo案例 待补充&amp;hellip;
 ip a 找到下图中红色箭头指向的IP地址：
 使用本机IP起服务
 hugo server -D --bind &amp;lt;本机IP&amp;gt; --baseURL=http://&amp;lt;本机IP&amp;gt; 参考 Hugo中文文档 Hugo框架中文文档 内容管理 静态文件 </description>
-    </item>
-    
-    <item>
-      <title>Docker容器重启IP不固定</title>
-      <link>https://zhang-weiming.github.io/post/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</link>
-      <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhang-weiming.github.io/post/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</guid>
-      <description>问题描述 docker 容器重启后IP可能会变。
-问题原因解析 这里需要借助 docker 和 Linux 的网桥来给容器设置固定网络下的IP。
-docker 有默认的网桥设置，默认网桥叫 docker0，可以借助命令 drctl show 来查看，网段在172.17.0.0/16。
-解决 首先创建一个 docker network # xxx.xxx.xxx.xxx/16 对应的子网掩码为 255.255.0.0 # xxx.xxx.xxx.xxx/24 对应的子网掩码为 255.255.255.0 docker network create --driver bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 mynet 下面操作二选一 停止并删除正在运行的容器，重新创建容器，在创建容器的 docker run ... 命令中加入参数 --network mynet 将某个容器加入到指定的网络中，使用命令 docker network connect &amp;lt;networkName&amp;gt; &amp;lt;containerName&amp;gt; 参考 Docker网络互联原理及自定义网络的使用 Docker网络 Pipework网络方案 </description>
-    </item>
-    
-    <item>
-      <title>Docker容器重启IP不固定</title>
-      <link>https://zhang-weiming.github.io/post/2022-09-29/docker%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</link>
-      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhang-weiming.github.io/post/2022-09-29/docker%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</guid>
-      <description>问题描述 虚拟机里，docker 容器部署的 nacos-ruoyi 无法访问到 docker 容器部署的 mysql 数据库
-问题原因解析 这个问题是由 docker 本身的网络设置导致的。
-安装docker时，docker会默认创建一个内部的桥接网络docker0，见下方样例。每创建一个容器分配一个虚拟网卡，容器之间可以根据ip互相访问。
-[root@33fcf82ab4dd /]# [root@CentOS ~]# ifconfig ...... docker0: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt; mtu 1500 inet 172.17.0.1 netmask 255.255.0.0 broadcast 0.0.0.0 inet6 fe80::42:41ff:fe93:7102 prefixlen 64 scopeid 0x20&amp;lt;link&amp;gt; ether 02:42:41:93:71:02 txqueuelen 0 (Ethernet) RX packets 9374 bytes 737420 (720.1 KiB) RX errors 0 dropped 0 overruns 0 frame 0 TX packets 10553 bytes 171557354 (163.6 MiB) TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0 .</description>
-    </item>
-    
-    <item>
-      <title>Docker服务启动时，容器自动被拉起</title>
-      <link>https://zhang-weiming.github.io/post/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</link>
-      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhang-weiming.github.io/post/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</guid>
-      <description>Desc Text.</description>
     </item>
     
   </channel>

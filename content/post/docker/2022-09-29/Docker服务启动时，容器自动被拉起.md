@@ -38,28 +38,25 @@ editPost:
 
 ## 问题描述
 
-docker 容器重启后IP可能会变。
+每次启动虚拟机，docker 服务会自动启动，同时发现总是有几个容器会自动被启动。
+
+而我们期望的是，docker服务自启动后，运行中的容器列表为空。
 
 ## 问题原因解析
 
-这里需要借助 docker 和 Linux 的网桥来给容器设置固定网络下的IP。
+这个问题是由 docker run 命令中的 \-\-restart=always 参数设置导致的。
 
-docker 有默认的网桥设置，默认网桥叫 docker0，可以借助命令 `drctl show` 来查看，网段在172.17.0.0/16。
+\-\-restart 具体参数值有以下4个：
+
+- no : 容器退出时，不重启容器
+- on-failure : 只有在非0状态退出时才从新启动容器
+- always : 无论退出状态是如何，都重启容器
+- unless-stopped : 在容器退出时总是重启容器，但是不考虑在Docker守护进程启动时就已经停止了的容器
 
 ## 解决
 
-- 首先创建一个 docker network
-``` sh
-# xxx.xxx.xxx.xxx/16 对应的子网掩码为 255.255.0.0
-# xxx.xxx.xxx.xxx/24 对应的子网掩码为 255.255.255.0
-docker network create --driver bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 mynet
-```
-- 下面操作二选一
-	+ 停止并删除正在运行的容器，重新创建容器，在创建容器的 `docker run ...` 命令中加入参数 `--network mynet`
-	+ 将某个容器加入到指定的网络中，使用命令 `docker network connect <networkName> <containerName>`
+- docker update --restart=on-failure <容器ID|容器名称>
 
 ## 参考
 
-- [Docker网络互联原理及自定义网络的使用](https://www.jianshu.com/p/d4bb218ec465)
-- [Docker网络](https://www.cnblogs.com/niujifei/p/16750149.html)
-- [Pipework网络方案](https://blog.csdn.net/u013355826/article/details/97399078)
+- [Docker 容器开机启动设置](https://www.xiexianbin.cn/docker/client/2017-05-21-docker-restart-policies/index.html)

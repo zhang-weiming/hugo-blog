@@ -34,11 +34,26 @@
     
     <item>
       <title>K8S部署Redis-3.0.7</title>
-      <link>https://zhang-weiming.github.io/post/redis/2023-05-23/redis_k8s/</link>
+      <link>https://zhang-weiming.github.io/post/redis/2023-05-21/redis_k8s/</link>
       <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://zhang-weiming.github.io/post/redis/2023-05-23/redis_k8s/</guid>
+      <guid>https://zhang-weiming.github.io/post/redis/2023-05-21/redis_k8s/</guid>
       <description>k8s部署redis 3.0.7 Deployment apiVersion: apps/v1 kind: Deployment metadata: name: redis labels: app: redis spec: replicas: 1 selector: matchLabels: app: redis template: metadata: labels: app: redis spec: containers: - name: redis image: redis:3.0.7 command: - &amp;#34;sh&amp;#34; - &amp;#34;-c&amp;#34; - &amp;#34;redis-server /usr/local/redis/redis.conf&amp;#34; ports: - containerPort: 6379 resources: limits: cpu: 1000m memory: 1024Mi requests: cpu: 1000m memory: 1024Mi livenessProbe: tcpSocket: port: 6379 initialDelaySeconds: 300 timeoutSeconds: 1 periodSeconds: 10 successThreshold: 1 failureThreshold: 3 readinessProbe: tcpSocket: port: 6379 initialDelaySeconds: 5 timeoutSeconds: 1 periodSeconds: 10 successThreshold: 1 failureThreshold: 3 volumeMounts: - name: config mountPath: /usr/local/redis/redis.</description>
+    </item>
+    
+    <item>
+      <title>Theiaide</title>
+      <link>https://zhang-weiming.github.io/post/webide/2023-05-10/theiaide/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhang-weiming.github.io/post/webide/2023-05-10/theiaide/</guid>
+      <description>简介 theiaide安装过程中诸多报错问题解决记录文档。
+代码：https://github.com/eclipse-theia/theia 文档：https://github.com/eclipse-theia/theia/tree/master/doc#quick-start，theia/doc/Developing.md文件 git clone https://kgithub.com/eclipse-theia/theia \ &amp;amp;&amp;amp; cd theia \ &amp;amp;&amp;amp; yarn \ &amp;amp;&amp;amp; yarn download:plugins \ &amp;amp;&amp;amp; yarn browser build \ &amp;amp;&amp;amp; yarn browser start 问题1：安装依赖报错，前置依赖版本不匹配 根据提示，安装相应版本的依赖 # CentOS安装软件包命令模板 yum install -y &amp;lt;package name&amp;gt;-&amp;lt;version&amp;gt; 问题2：yarn安装依赖过程中，gyp报错：exit status 2 报错原因：
+缺少bzip2命令，安装依赖过程中，无法解压压缩包导致报错。
+解决方法：
+安装bzip2命令
+yum install -y bzip2 theiaide配置文件模块分析 待补充&amp;hellip;
+参考 theiaide doc - Github 部署相关说明部分在theia/doc/Developing.md文件中 </description>
     </item>
     
     <item>

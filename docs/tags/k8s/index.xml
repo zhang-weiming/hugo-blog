@@ -23,10 +23,10 @@
     
     <item>
       <title>K8S部署Redis-3.0.7</title>
-      <link>https://zhang-weiming.github.io/post/redis/2023-05-23/redis_k8s/</link>
+      <link>https://zhang-weiming.github.io/post/redis/2023-05-21/redis_k8s/</link>
       <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://zhang-weiming.github.io/post/redis/2023-05-23/redis_k8s/</guid>
+      <guid>https://zhang-weiming.github.io/post/redis/2023-05-21/redis_k8s/</guid>
       <description>k8s部署redis 3.0.7 Deployment apiVersion: apps/v1 kind: Deployment metadata: name: redis labels: app: redis spec: replicas: 1 selector: matchLabels: app: redis template: metadata: labels: app: redis spec: containers: - name: redis image: redis:3.0.7 command: - &amp;#34;sh&amp;#34; - &amp;#34;-c&amp;#34; - &amp;#34;redis-server /usr/local/redis/redis.conf&amp;#34; ports: - containerPort: 6379 resources: limits: cpu: 1000m memory: 1024Mi requests: cpu: 1000m memory: 1024Mi livenessProbe: tcpSocket: port: 6379 initialDelaySeconds: 300 timeoutSeconds: 1 periodSeconds: 10 successThreshold: 1 failureThreshold: 3 readinessProbe: tcpSocket: port: 6379 initialDelaySeconds: 5 timeoutSeconds: 1 periodSeconds: 10 successThreshold: 1 failureThreshold: 3 volumeMounts: - name: config mountPath: /usr/local/redis/redis.</description>
     </item>
     

@@ -23,5 +23,20 @@
 [root@template ~]# df -h Filesystem Size Used Avail Use% Mounted on /dev/vda3 16G 15G 20K 100% / devtmpfs 32G 0 32G 0% /dev tmpfs 32G 0 32G 0% /dev/shm tmpfs 32G 3.3G 29G 11% /run tmpfs 32G 0 32G 0% /sys/fs/cgroup /dev/mapper/data-data_lv 600G 21G 579G 4% /data /dev/vda1 497M 123M 375M 25% /boot tmpfs 6.3G 0 6.3G 0% /run/user/1002 问题定位 执行命令：</description>
     </item>
     
+    <item>
+      <title>Theiaide</title>
+      <link>https://zhang-weiming.github.io/post/webide/2023-05-10/theiaide/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhang-weiming.github.io/post/webide/2023-05-10/theiaide/</guid>
+      <description>简介 theiaide安装过程中诸多报错问题解决记录文档。
+代码：https://github.com/eclipse-theia/theia 文档：https://github.com/eclipse-theia/theia/tree/master/doc#quick-start，theia/doc/Developing.md文件 git clone https://kgithub.com/eclipse-theia/theia \ &amp;amp;&amp;amp; cd theia \ &amp;amp;&amp;amp; yarn \ &amp;amp;&amp;amp; yarn download:plugins \ &amp;amp;&amp;amp; yarn browser build \ &amp;amp;&amp;amp; yarn browser start 问题1：安装依赖报错，前置依赖版本不匹配 根据提示，安装相应版本的依赖 # CentOS安装软件包命令模板 yum install -y &amp;lt;package name&amp;gt;-&amp;lt;version&amp;gt; 问题2：yarn安装依赖过程中，gyp报错：exit status 2 报错原因：
+缺少bzip2命令，安装依赖过程中，无法解压压缩包导致报错。
+解决方法：
+安装bzip2命令
+yum install -y bzip2 theiaide配置文件模块分析 待补充&amp;hellip;
+参考 theiaide doc - Github 部署相关说明部分在theia/doc/Developing.md文件中 </description>
+    </item>
+    
   </channel>
 </rss>

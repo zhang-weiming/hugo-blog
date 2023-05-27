@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Nginx - 分类 - 张大锅</title>
+    <link>https://zhang-weiming.github.io/categories/nginx/</link>
+    <description>Nginx - 分类 - 张大锅</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 09 Mar 2023 23:57:22 &#43;0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/categories/nginx/" rel="self" type="application/rss+xml" /><item>
+  <title>Nginx代理后，端口丢失和https变为http的问题</title>
+  <link>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</link>
+  <pubDate>Thu, 09 Mar 2023 23:57:22 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</guid>
+  <description><![CDATA[问题现象 project服务默认使用端口80，我们通过修改配置，将其端口修改为A，并增加路由前缀/project/。 现在，project服务访]]></description>
+</item>
+</channel>
+</rss>

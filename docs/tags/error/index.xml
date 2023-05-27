@@ -1,42 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>error on 张大锅的博客</title>
+    <title>error - 标签 - 张大锅</title>
     <link>https://zhang-weiming.github.io/tags/error/</link>
-    <description>Recent content in error on 张大锅的博客</description>
-    <image>
-      <title>张大锅的博客</title>
-      <url>https://zhang-weiming.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zhang-weiming.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-Hans</language>
-    <lastBuildDate>Mon, 22 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/error/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>mysql执行较大sql脚本导致服务器跟目录占满</title>
-      <link>https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/</link>
-      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/</guid>
-      <description>2023-05-22 问题描述 删除一个较大体量的数据库后，发现mysql无法正常执行sql脚本，并给出以下报错：
-[error]/tmp/ib1tJjCi file has no space left 同时，发现服务器磁盘根目录满了！
-[root@template ~]# df -h Filesystem Size Used Avail Use% Mounted on /dev/vda3 16G 15G 20K 100% / devtmpfs 32G 0 32G 0% /dev tmpfs 32G 0 32G 0% /dev/shm tmpfs 32G 3.3G 29G 11% /run tmpfs 32G 0 32G 0% /sys/fs/cgroup /dev/mapper/data-data_lv 600G 21G 579G 4% /data /dev/vda1 497M 123M 375M 25% /boot tmpfs 6.3G 0 6.3G 0% /run/user/1002 问题定位 执行命令：</description>
-    </item>
-    
-    <item>
-      <title>Theiaide</title>
-      <link>https://zhang-weiming.github.io/post/webide/2023-05-10/theiaide/</link>
-      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhang-weiming.github.io/post/webide/2023-05-10/theiaide/</guid>
-      <description>简介 theiaide安装过程中诸多报错问题解决记录文档。
-代码：https://github.com/eclipse-theia/theia 文档：https://github.com/eclipse-theia/theia/tree/master/doc#quick-start，theia/doc/Developing.md文件 git clone https://kgithub.com/eclipse-theia/theia \ &amp;amp;&amp;amp; cd theia \ &amp;amp;&amp;amp; yarn \ &amp;amp;&amp;amp; yarn download:plugins \ &amp;amp;&amp;amp; yarn browser build \ &amp;amp;&amp;amp; yarn browser start 问题1：安装依赖报错，前置依赖版本不匹配 根据提示，安装相应版本的依赖 # CentOS安装软件包命令模板 yum install -y &amp;lt;package name&amp;gt;-&amp;lt;version&amp;gt; 问题2：yarn安装依赖过程中，gyp报错：exit status 2 报错原因：
-缺少bzip2命令，安装依赖过程中，无法解压压缩包导致报错。
-解决方法：
-安装bzip2命令
-yum install -y bzip2 theiaide配置文件模块分析 待补充&amp;hellip;
-参考 theiaide doc - Github 部署相关说明部分在theia/doc/Developing.md文件中 </description>
-    </item>
-    
-  </channel>
+    <description>error - 标签 - 张大锅</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 22 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/error/" rel="self" type="application/rss+xml" /><item>
+  <title>mysql执行较大sql脚本导致服务器跟目录占满</title>
+  <link>https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/</link>
+  <pubDate>Mon, 22 May 2023 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/</guid>
+  <description><![CDATA[问题描述 删除一个较大体量的数据库后，发现mysql无法正常执行sql脚本，并给出以下报错： 1 [error]/tmp/ib1tJjCi file has no space left 同时，发现服务器磁盘根目录满了！ 1 2]]></description>
+</item>
+<item>
+  <title>Theiaide主机部署</title>
+  <link>https://zhang-weiming.github.io/post/ide/webide/2023-05-10/theiaide_installation/</link>
+  <pubDate>Wed, 10 May 2023 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/ide/webide/2023-05-10/theiaide_installation/</guid>
+  <description><![CDATA[简介 theiaide安装过程中诸多报错问题解决记录文档。 代码：https://github.com/eclipse-theia/theia 文]]></description>
+</item>
+</channel>
 </rss>

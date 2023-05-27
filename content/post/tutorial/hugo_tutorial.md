@@ -1,4 +1,6 @@
-:wq---
+---
+type: posts
+reward: true
 title: "hugo开发博客"
 date: 2023-02-25
 draft: false

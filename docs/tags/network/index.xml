@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>network - 标签 - 张大锅</title>
+    <link>https://zhang-weiming.github.io/tags/network/</link>
+    <description>network - 标签 - 张大锅</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/network/" rel="self" type="application/rss+xml" /><item>
+  <title>Docker容器重启IP不固定</title>
+  <link>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</link>
+  <pubDate>Tue, 04 Oct 2022 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</guid>
+  <description><![CDATA[问题描述 docker 容器重启后IP可能会变。 问题原因解析 这里需要借助 docker 和 Linux 的网桥来给容器设置固定网络下的IP。 docker 有默认的网桥设置，默认网桥叫 docke]]></description>
+</item>
+<item>
+  <title>Docker网络设置</title>
+  <link>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</link>
+  <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</guid>
+  <description><![CDATA[问题描述 虚拟机里，docker 容器部署的 nacos-ruoyi 无法访问到 docker 容器部署的 mysql 数据库 问题原因解析 这个问题是由 docker 本身的网络设置导致的。 安装docker时，]]></description>
+</item>
+</channel>
+</rss>

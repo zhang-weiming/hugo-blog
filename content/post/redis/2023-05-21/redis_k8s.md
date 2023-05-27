@@ -1,9 +1,13 @@
 ---
+type: posts
+reward: true
 title: "K8S部署Redis-3.0.7"
 date: 2023-05-21
 draft: false
 tags: ["k8s", "mysql"]
 author: "张大锅"
+categories:
+  - Redis
 ---
 
 ## k8s部署redis 3.0.7

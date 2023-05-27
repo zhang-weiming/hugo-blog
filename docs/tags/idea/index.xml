@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>idea - 标签 - 张大锅</title>
+    <link>https://zhang-weiming.github.io/tags/idea/</link>
+    <description>idea - 标签 - 张大锅</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 May 2023 04:18:06 &#43;0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/idea/" rel="self" type="application/rss+xml" /><item>
+  <title>IDEA 2022版本没有commit对话框</title>
+  <link>https://zhang-weiming.github.io/post/ide/idea/2023-05-28/idea_v2022&#43;_commit_view_window/</link>
+  <pubDate>Sun, 28 May 2023 04:18:06 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/ide/idea/2023-05-28/idea_v2022&#43;_commit_view_window/</guid>
+  <description><![CDATA[需求 老版本的IDEA在project下面都有一个commit的对话框，但是在2022版本默认没有这个。 解决 打开方式：Settings -&gt; Version Contrl -&gt;]]></description>
+</item>
+</channel>
+</rss>

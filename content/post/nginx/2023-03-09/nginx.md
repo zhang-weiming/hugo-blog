@@ -1,9 +1,13 @@
 ---
+type: posts
+reward: true
 title: "Nginx代理后，端口丢失和https变为http的问题"
 date: 2023-03-09T23:57:22+08:00
 tags: ["nginx", "反向代理", "重定向"]
 draft: false
 author: "张大锅"
+categories:
+  - Nginx
 ---
 
 ## 问题现象

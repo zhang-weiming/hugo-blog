@@ -1,0 +1,45 @@
+# -------------------------------------------------------------------------------------
+# Menu Configuration | 菜单配置
+# See: https://fixit.lruihao.cn/zh-cn/documentation/basics/#menu-configuration
+# -------------------------------------------------------------------------------------
+
+[[main]]
+  identifier = "post"
+  name = "文档"
+  url = "/post/"
+  title = "文档"
+  weight = 1
+  [main.params]
+    icon = "fa-solid fa-book"
+
+[[main]]
+  identifier = "categories"
+  name = "分类"
+  url = "categories/"
+  weight = 2
+  [main.params]
+    icon = "fa-solid fa-th"
+[[main]]
+  identifier = "tags"
+  name = "标签"
+  url = "tags/"
+  weight = 3
+  [main.params]
+    icon = "fa-solid fa-tags"
+[[main]]
+  identifier = "about"
+  name = "关于"
+  url = "about/"
+  weight = 20
+  [main.params]
+  icon = "fa-solid fa-info-circle"
+
+[[main]]
+  identifier = "github"
+  pre = "<i class='fa-brands fa-github fa-fw' aria-hidden='true'></i>"
+  url = "https://github.com/hugo-fixit/FixIt"
+  title = "GitHub"
+  weight = 100
+  [main.params]
+    class = "text-center"
+    type = "mobile"

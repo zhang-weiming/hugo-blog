@@ -1,49 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Docker on 张大锅的博客</title>
+    <title>Docker - 标签 - 张大锅</title>
     <link>https://zhang-weiming.github.io/tags/docker/</link>
-    <description>Recent content in Docker on 张大锅的博客</description>
-    <image>
-      <title>张大锅的博客</title>
-      <url>https://zhang-weiming.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zhang-weiming.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-Hans</language>
-    <lastBuildDate>Tue, 04 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Docker容器重启IP不固定</title>
-      <link>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</link>
-      <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</guid>
-      <description>问题描述 docker 容器重启后IP可能会变。
-问题原因解析 这里需要借助 docker 和 Linux 的网桥来给容器设置固定网络下的IP。
-docker 有默认的网桥设置，默认网桥叫 docker0，可以借助命令 drctl show 来查看，网段在172.17.0.0/16。
-解决 首先创建一个 docker network # xxx.xxx.xxx.xxx/16 对应的子网掩码为 255.255.0.0 # xxx.xxx.xxx.xxx/24 对应的子网掩码为 255.255.255.0 docker network create --driver bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 mynet 下面操作二选一 停止并删除正在运行的容器，重新创建容器，在创建容器的 docker run ... 命令中加入参数 --network mynet 将某个容器加入到指定的网络中，使用命令 docker network connect &amp;lt;networkName&amp;gt; &amp;lt;containerName&amp;gt; 参考 Docker网络互联原理及自定义网络的使用 Docker网络 Pipework网络方案 </description>
-    </item>
-    
-    <item>
-      <title>Docker容器重启IP不固定</title>
-      <link>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</link>
-      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</guid>
-      <description>问题描述 虚拟机里，docker 容器部署的 nacos-ruoyi 无法访问到 docker 容器部署的 mysql 数据库
-问题原因解析 这个问题是由 docker 本身的网络设置导致的。
-安装docker时，docker会默认创建一个内部的桥接网络docker0，见下方样例。每创建一个容器分配一个虚拟网卡，容器之间可以根据ip互相访问。
-[root@33fcf82ab4dd /]# [root@CentOS ~]# ifconfig ...... docker0: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt; mtu 1500 inet 172.17.0.1 netmask 255.255.0.0 broadcast 0.0.0.0 inet6 fe80::42:41ff:fe93:7102 prefixlen 64 scopeid 0x20&amp;lt;link&amp;gt; ether 02:42:41:93:71:02 txqueuelen 0 (Ethernet) RX packets 9374 bytes 737420 (720.1 KiB) RX errors 0 dropped 0 overruns 0 frame 0 TX packets 10553 bytes 171557354 (163.6 MiB) TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0 .</description>
-    </item>
-    
-    <item>
-      <title>Docker服务启动时，容器自动被拉起</title>
-      <link>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</link>
-      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</guid>
-      <description>Desc Text.</description>
-    </item>
-    
-  </channel>
+    <description>Docker - 标签 - 张大锅</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/docker/" rel="self" type="application/rss+xml" /><item>
+  <title>Docker容器重启IP不固定</title>
+  <link>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</link>
+  <pubDate>Tue, 04 Oct 2022 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</guid>
+  <description><![CDATA[问题描述 docker 容器重启后IP可能会变。 问题原因解析 这里需要借助 docker 和 Linux 的网桥来给容器设置固定网络下的IP。 docker 有默认的网桥设置，默认网桥叫 docke]]></description>
+</item>
+<item>
+  <title>Docker服务启动时，容器自动被拉起</title>
+  <link>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</link>
+  <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</guid>
+  <description><![CDATA[问题描述 每次启动虚拟机，docker 服务会自动启动，同时发现总是有几个容器会自动被启动。 而我们期望的是，docker服务自启动后，运行中的容]]></description>
+</item>
+<item>
+  <title>Docker网络设置</title>
+  <link>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</link>
+  <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</guid>
+  <description><![CDATA[问题描述 虚拟机里，docker 容器部署的 nacos-ruoyi 无法访问到 docker 容器部署的 mysql 数据库 问题原因解析 这个问题是由 docker 本身的网络设置导致的。 安装docker时，]]></description>
+</item>
+</channel>
 </rss>

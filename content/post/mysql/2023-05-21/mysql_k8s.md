@@ -1,9 +1,13 @@
 ---
+type: posts
+reward: true
 title: "K8S部署MySQL-5.7"
 date: 2023-05-21
 draft: false
 tags: ["k8s", "mysql"]
 author: "张大锅"
+categories:
+  - MySQL
 ---
 
 ## k8s部署MySQL 5.7

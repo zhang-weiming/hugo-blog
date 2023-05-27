@@ -1,9 +1,13 @@
 ---
+type: posts
+reward: true
 title: "Docker容器重启IP不固定"
 date: 2022-10-04
 draft: false
-tags: ["Docker"]
+tags: ["Docker", "network", "IP"]
 author: "张大锅"
+categories:
+  - Docker
 ---
 
 ## 问题描述

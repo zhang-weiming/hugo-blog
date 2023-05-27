@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>giscus - 标签 - 张大锅</title>
+    <link>https://zhang-weiming.github.io/tags/giscus/</link>
+    <description>giscus - 标签 - 张大锅</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 May 2023 07:53:27 &#43;0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/giscus/" rel="self" type="application/rss+xml" /><item>
+  <title>Hugo博客开启Giscus评论功能</title>
+  <link>https://zhang-weiming.github.io/post/tutorial/hugo_giscus/</link>
+  <pubDate>Sun, 28 May 2023 07:53:27 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/tutorial/hugo_giscus/</guid>
+  <description><![CDATA[待补充&hellip;]]></description>
+</item>
+</channel>
+</rss>

@@ -1,12 +1,17 @@
 ---
+type: posts
+reward: true
 title: "mysql执行较大sql脚本导致服务器跟目录占满"
 date: 2023-05-22
 draft: false
 tags: ["mysql", "linux", "ibtmp1", "error"]
 author: "张大锅"
+lightgallery: true
+toc:
+  auto: false
+categories:
+  - MySQL
 ---
-
-## 2023-05-22
 
 ## 问题描述
 

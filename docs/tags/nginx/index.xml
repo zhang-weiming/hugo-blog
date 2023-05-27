@@ -1,33 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>nginx on 张大锅的博客</title>
+    <title>nginx - 标签 - 张大锅</title>
     <link>https://zhang-weiming.github.io/tags/nginx/</link>
-    <description>Recent content in nginx on 张大锅的博客</description>
-    <image>
-      <title>张大锅的博客</title>
-      <url>https://zhang-weiming.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zhang-weiming.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-Hans</language>
-    <lastBuildDate>Thu, 09 Mar 2023 23:57:22 +0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Nginx代理后，端口丢失和https变为http的问题</title>
-      <link>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</link>
-      <pubDate>Thu, 09 Mar 2023 23:57:22 +0800</pubDate>
-      
-      <guid>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</guid>
-      <description>问题现象 project服务默认使用端口80，我们通过修改配置，将其端口修改为A，并增加路由前缀/project/。
-现在，project服务访问地址为：http://x.x.x.x:A/project/。
-我们在Nginx里做了一层代理，Nginx配置如下：
-server { listen B ssl; server_name y.y.y.y; ... location /project/ { proxy_pass http://x.x.x.x:A/project/; } } 代理之后，当project服务返回302重定向时，端口就会消失，流程如下：
-访问project主页地址：http://x.x.x.x:A/project/； 查看请求信息，可以看到如下信息，说明URL重定向到了登录页面，但是丢失了端口： General: Status Code: 302 Found Response Headers： Location: https://x.x.x.x/project/signin # 这里给出的地址就是重定向后的目标地址 手动添加端口后访问页面正常：https://x.x.x.x:A/project/signin 初步尝试 最开始的解决方案是修改响应头里的Location字段。
-参考资料 Apache和Nginx自定义修改Response Header中的Location值 Nginx里Header修改 但由于改动过大，放弃了该方案。
-经过进一步查找资料，进行了如下配置。配完以后，发现端口不再丢失，但是协议从https变成了http。
-location /project/ { proxy_set_header Host $http_host; # 添加了这一行 proxy_pass http://x.x.x.x:A/project/; } 不完美解决方案 其实算是个不完整的Nginx配置，配置步骤如下：
-将请求代理到http协议的80端口； server { listen B ssl; server_name y.y.y.y; ... location /project/ { # 1、现将请求代理到http协议的B端口（内部映射到80） proxy_set_header Host $host:80; proxy_pass http://x.</description>
-    </item>
-    
-  </channel>
+    <description>nginx - 标签 - 张大锅</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 09 Mar 2023 23:57:22 &#43;0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/nginx/" rel="self" type="application/rss+xml" /><item>
+  <title>Nginx代理后，端口丢失和https变为http的问题</title>
+  <link>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</link>
+  <pubDate>Thu, 09 Mar 2023 23:57:22 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</guid>
+  <description><![CDATA[问题现象 project服务默认使用端口80，我们通过修改配置，将其端口修改为A，并增加路由前缀/project/。 现在，project服务访]]></description>
+</item>
+</channel>
 </rss>

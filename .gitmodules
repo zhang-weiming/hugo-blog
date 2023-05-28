@@ -3,7 +3,7 @@
 	url = https://github.com/adityatelange/hugo-PaperMod.git
 [submodule "themes/FixIt"]
 	path = themes/FixIt
-	url = https://kgithub.com/hugo-fixit/FixIt.git
+	url = https://github.com/hugo-fixit/FixIt.git
 [submodule "themes/shortcode-sponsor-log"]
 	path = themes/shortcode-sponsor-log
-	url = https://kgithub.com/Lruihao/hugo-shortcode-sponsor-log.git
+	url = https://github.com/Lruihao/hugo-shortcode-sponsor-log.git

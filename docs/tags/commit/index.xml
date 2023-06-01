@@ -10,7 +10,8 @@
   <pubDate>Sun, 28 May 2023 04:18:06 &#43;0800</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/ide/idea/2023-05-28/idea_v2022&#43;_commit_view_window/</guid>
-  <description><![CDATA[需求 老版本的IDEA在project下面都有一个commit的对话框，但是在2022版本默认没有这个。 解决 打开方式：Settings -&gt; Version Contrl -&gt;]]></description>
+  <description><![CDATA[<p></p>
+<p>老版本的IDEA在左侧的Project tab页下面都有一个Commit的对话框，但是在2022版本里默认不显示。</p>]]></description>
 </item>
 </channel>
 </rss>

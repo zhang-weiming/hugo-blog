@@ -10,7 +10,23 @@
   <pubDate>Sat, 25 Feb 2023 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/tutorial/hugo_tutorial/</guid>
-  <description><![CDATA[总结日常百度的技术知识 记录工作中遇到的技术难题及解决方法 &hellip; 关键目录说明 demo案例 博客创建工具 hugo 新建博客仓库 1 hugo new site &lt;仓库名&gt; 关]]></description>
+  <description><![CDATA[<ul>
+<li>
+<p>总结日常百度的技术知识</p>
+</li>
+<li>
+<p>记录工作中遇到的技术难题及解决方法</p>
+</li>
+<li>
+<p>&hellip;</p>
+</li>
+<li>
+<p><i class="fa-regular fa-square fa-fw" aria-hidden="true"></i> 关键目录说明</p>
+</li>
+<li>
+<p><i class="fa-regular fa-square fa-fw" aria-hidden="true"></i> demo案例</p>
+</li>
+</ul>]]></description>
 </item>
 </channel>
 </rss>

@@ -5,20 +5,21 @@
     <description>error - 标签 - 张大锅</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
       <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 22 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/error/" rel="self" type="application/rss+xml" /><item>
-  <title>mysql执行较大sql脚本导致服务器跟目录占满</title>
+  <title>MySQL执行较大sql脚本导致服务器跟目录占满</title>
   <link>https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/</link>
   <pubDate>Mon, 22 May 2023 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/</guid>
-  <description><![CDATA[问题描述 删除一个较大体量的数据库后，发现mysql无法正常执行sql脚本，并给出以下报错： 1 [error]/tmp/ib1tJjCi file has no space left 同时，发现服务器磁盘根目录满了！ 1 2]]></description>
+  <description><![CDATA[<p>年轻人，要善用临时表&hellip;</p>]]></description>
 </item>
 <item>
-  <title>Theiaide主机部署</title>
+  <title>TheiaIDE安装部署时，可能出现的几个问题</title>
   <link>https://zhang-weiming.github.io/post/ide/webide/2023-05-10/theiaide_installation/</link>
   <pubDate>Wed, 10 May 2023 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/ide/webide/2023-05-10/theiaide_installation/</guid>
-  <description><![CDATA[简介 theiaide安装过程中诸多报错问题解决记录文档。 代码：https://github.com/eclipse-theia/theia 文]]></description>
+  <description><![CDATA[<p>在安装TheiaIDE过程中，遇到诸多报错问题，在此记录一下问题解决过程。</p>
+<p>官方给出的安装过程相关命令，简洁的让人觉得不简单&hellip;</p>]]></description>
 </item>
 </channel>
 </rss>

@@ -8,9 +8,13 @@
 - [ ] 关键目录说明
 - [ ] demo案例
 
+<!--more-->
+
 ## 博客创建工具
 
-hugo
+[hugo](https://gohugo.io/)
+
+[hugo-中文文档](https://www.gohugo.org/)
 
 ## 新建博客仓库
 
@@ -20,11 +24,11 @@ hugo new site <仓库名>
 
 ## 关键目录说明
 
-待补充...
+敬请期待 😜
 
 ## demo案例
 
-待补充...
+敬请期待 😋
 
 ### 本地起服务
 

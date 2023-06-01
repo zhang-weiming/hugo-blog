@@ -5,12 +5,13 @@
     <description>ide - 标签 - 张大锅</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
       <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/ide/" rel="self" type="application/rss+xml" /><item>
-  <title>Theiaide主机部署</title>
+  <title>TheiaIDE安装部署时，可能出现的几个问题</title>
   <link>https://zhang-weiming.github.io/post/ide/webide/2023-05-10/theiaide_installation/</link>
   <pubDate>Wed, 10 May 2023 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/ide/webide/2023-05-10/theiaide_installation/</guid>
-  <description><![CDATA[简介 theiaide安装过程中诸多报错问题解决记录文档。 代码：https://github.com/eclipse-theia/theia 文]]></description>
+  <description><![CDATA[<p>在安装TheiaIDE过程中，遇到诸多报错问题，在此记录一下问题解决过程。</p>
+<p>官方给出的安装过程相关命令，简洁的让人觉得不简单&hellip;</p>]]></description>
 </item>
 </channel>
 </rss>

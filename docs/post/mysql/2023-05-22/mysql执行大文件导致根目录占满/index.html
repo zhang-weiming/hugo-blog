@@ -5,23 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>mysql执行较大sql脚本导致服务器跟目录占满 - 张大锅</title><meta name="author" content="张大锅">
+    <title>MySQL执行较大sql脚本导致服务器跟目录占满 - 张大锅</title><meta name="author" content="张大锅">
 <meta name="author-link" content="https://zhang-weiming.github.io/">
-<meta name="description" content="问题描述 删除一个较大体量的数据库后，发现mysql无法正常执行sql脚本，并给出以下报错： 1 [error]/tmp/ib1tJjCi file has no space left 同时，发现服务器磁盘根目录满了！ 1 2" /><meta name="keywords" content='mysql, linux, ibtmp1, error' /><meta itemprop="name" content="mysql执行较大sql脚本导致服务器跟目录占满">
-<meta itemprop="description" content="问题描述 删除一个较大体量的数据库后，发现mysql无法正常执行sql脚本，并给出以下报错： 1 [error]/tmp/ib1tJjCi file has no space left 同时，发现服务器磁盘根目录满了！ 1 2"><meta itemprop="datePublished" content="2023-05-22T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-05-28T07:25:02+08:00" />
-<meta itemprop="wordCount" content="804"><meta itemprop="image" content="https://zhang-weiming.github.io/logo.png"/>
-<meta itemprop="keywords" content="mysql,linux,ibtmp1,error," /><meta property="og:title" content="mysql执行较大sql脚本导致服务器跟目录占满" />
-<meta property="og:description" content="问题描述 删除一个较大体量的数据库后，发现mysql无法正常执行sql脚本，并给出以下报错： 1 [error]/tmp/ib1tJjCi file has no space left 同时，发现服务器磁盘根目录满了！ 1 2" />
+<meta name="description" content="年轻人，要善用临时表&hellip;" /><meta name="keywords" content='mysql, linux, ibtmp1, error' /><meta itemprop="name" content="MySQL执行较大sql脚本导致服务器跟目录占满">
+<meta itemprop="description" content="年轻人，要善用临时表&hellip;"><meta itemprop="datePublished" content="2023-05-22T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-06-01T20:47:04+08:00" />
+<meta itemprop="wordCount" content="840"><meta itemprop="image" content="https://zhang-weiming.github.io/logo.png"/>
+<meta itemprop="keywords" content="mysql,linux,ibtmp1,error," /><meta property="og:title" content="MySQL执行较大sql脚本导致服务器跟目录占满" />
+<meta property="og:description" content="年轻人，要善用临时表&hellip;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/" /><meta property="og:image" content="https://zhang-weiming.github.io/logo.png"/><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-05-22T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-05-28T07:25:02+08:00" />
+<meta property="article:modified_time" content="2023-06-01T20:47:04+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://zhang-weiming.github.io/logo.png"/>
 
-<meta name="twitter:title" content="mysql执行较大sql脚本导致服务器跟目录占满"/>
-<meta name="twitter:description" content="问题描述 删除一个较大体量的数据库后，发现mysql无法正常执行sql脚本，并给出以下报错： 1 [error]/tmp/ib1tJjCi file has no space left 同时，发现服务器磁盘根目录满了！ 1 2"/>
+<meta name="twitter:title" content="MySQL执行较大sql脚本导致服务器跟目录占满"/>
+<meta name="twitter:description" content="年轻人，要善用临时表&hellip;"/>
 <meta name="application-name" content="FixIt">
 <meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,15 +29,15 @@
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "mysql执行较大sql脚本导致服务器跟目录占满",
+    "headline": "MySQL执行较大sql脚本导致服务器跟目录占满",
     "inLanguage": "zh-CN",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/zhang-weiming.github.io\/post\/mysql\/2023-05-22\/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1\/"
-    },"image": ["https:\/\/zhang-weiming.github.io\/images\/Apple-Devices-Preview.jpg"],"genre": "posts","keywords": "mysql, linux, ibtmp1, error","wordcount":  804 ,
-    "url": "https:\/\/zhang-weiming.github.io\/post\/mysql\/2023-05-22\/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1\/","datePublished": "2023-05-22T00:00:00+00:00","dateModified": "2023-05-28T07:25:02+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+    },"image": ["https:\/\/zhang-weiming.github.io\/images\/Apple-Devices-Preview.jpg"],"genre": "posts","keywords": "mysql, linux, ibtmp1, error","wordcount":  840 ,
+    "url": "https:\/\/zhang-weiming.github.io\/post\/mysql\/2023-05-22\/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1\/","datePublished": "2023-05-22T00:00:00+00:00","dateModified": "2023-06-01T20:47:04+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
       "@type": "Organization",
-      "name": "张大锅","logo": "https:\/\/zhang-weiming.github.io\/images\/avatar.png"},"author": {
+      "name": "张大锅","logo": "https:\/\/zhang-weiming.github.io\/img\/favicon.ico"},"author": {
         "@type": "Person",
         "name": "张大锅"
       },"description": ""
@@ -46,7 +46,7 @@
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="张大锅"><span class="header-title-text">张大锅</span></a><span class="header-subtitle"></span></div>
+      <a href="/" title="张大锅"><img loading="lazy" src="/img/favicon.ico" srcset="/img/favicon.ico, /img/favicon.ico 1.5x, /img/favicon.ico 2x" sizes="auto" data-title="张大锅" data-alt="张大锅" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">张大锅</span></a><span class="header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -95,7 +95,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="张大锅"><span class="header-title-text">张大锅</span></a><span class="header-subtitle"></span></div>
+        <a href="/" title="张大锅"><img loading="lazy" src="/img/favicon.ico" srcset="/img/favicon.ico, /img/favicon.ico 1.5x, /img/favicon.ico 2x" sizes="auto" data-title="/img/favicon.ico" data-alt="/img/favicon.ico" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">张大锅</span></a><span class="header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -166,7 +166,7 @@
   <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
-    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/post/" title="文档">文档</a></li><li class="breadcrumb-item active" aria-current="page">mysql执行较大sql脚本导致服务器跟目录占满</li>
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/post/" title="文档">文档</a></li><li class="breadcrumb-item active" aria-current="page">MySQL执行较大sql脚本导致服务器跟目录占满</li>
     </ol>
   </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
       <div class="toc-content always-active" id="toc-content-auto"></div></aside>
@@ -175,11 +175,11 @@
     </aside>
 
   <article class="page single">
-    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>mysql执行较大sql脚本导致服务器跟目录占满</span>
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>MySQL执行较大sql脚本导致服务器跟目录占满</span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://zhang-weiming.github.io/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp" srcset="https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp, https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp 1.5x, https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp 2x" sizes="auto" data-title="张大锅" data-alt="张大锅" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;张大锅</a></span>
           <span class="post-category">收录于 <a href="/categories/mysql/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> MySQL</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-05-22 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-22">2023-05-22</time></span>&nbsp;<span title="更新于 2023-05-28 07:25:02"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-28">2023-05-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 804 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="mysql执行较大sql脚本导致服务器跟目录占满">
+      <div class="post-meta-line"><span title="发布于 2023-05-22 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-22">2023-05-22</time></span>&nbsp;<span title="更新于 2023-06-01 20:47:04"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-01">2023-06-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 840 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="MySQL执行较大sql脚本导致服务器跟目录占满">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
             </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -197,7 +197,8 @@
     <li><a href="#参考">参考</a></li>
   </ul>
 </nav></div>
-      </div><div class="content" id="content"><h2 id="问题描述">问题描述</h2>
+      </div><div class="content" id="content"><p>年轻人，要善用临时表&hellip;</p>
+<h2 id="问题描述">问题描述</h2>
 <p>删除一个较大体量的数据库后，发现mysql无法正常执行sql脚本，并给出以下报错：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -297,12 +298,17 @@
 <ol>
 <li>修改 my.cnf 配置文件</li>
 </ol>
+<p>在 [mysqld] 下添加如下配置：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">innodb_temp_data_file_path</span> <span class="o">=</span> ibtmp1:12M:autoextend:max:5G
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[mysqld]
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">innodb_temp_data_file_path = ibtmp1:12M:autoextend:max:5G
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
@@ -313,7 +319,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">SET GLOBAL <span class="nv">innodb_fast_shutdown</span> <span class="o">=</span> 0<span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SET GLOBAL innodb_fast_shutdown = 0;
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="3">
@@ -329,7 +335,7 @@
 </div>
 </div><ol start="4">
 <li>
-<p>删除 ibtmp1 文件（重启自动删除）</p>
+<p>删除 ibtmp1 文件（重启过程中会自动删除）</p>
 </li>
 <li>
 <p>启动 mysql 服务</p>
@@ -362,23 +368,22 @@
 <li><a href="https://blog.csdn.net/weixin_30332165/article/details/113221115"target="_blank" rel="external nofollow noopener noreferrer">mysql导致根目录爆满_MYSQL临时表导致根分区爆满问题分析<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></li>
 <li><a href="https://huiraoo.github.io/blog/2020/08/05/mysql-ibtmp1/"target="_blank" rel="external nofollow noopener noreferrer">MySQL · 故障处理 · ibtmp1 文件过大<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></li>
 <li><a href="https://www.cnblogs.com/Presley-lpc/p/9177081.html"target="_blank" rel="external nofollow noopener noreferrer">Mysql innodb_fast_shutdown<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></li>
-</ul>
-</div><div class="post-footer" id="post-footer">
+</ul></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title="更新于 2023-05-28 07:25:02">更新于 2023-05-28&nbsp;</span>
+        <span title="更新于 2023-06-01 20:47:04">更新于 2023-06-01&nbsp;</span>
       </div><div class="post-info-license">
           <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
         </div></div>
     <div class="post-info-line">
       <div class="post-info-md"><span><a href="/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
       <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/" data-title="mysql执行较大sql脚本导致服务器跟目录占满" data-hashtags="mysql,linux,ibtmp1,error"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/" data-title="MySQL执行较大sql脚本导致服务器跟目录占满" data-hashtags="mysql,linux,ibtmp1,error"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
   <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/" data-hashtag="mysql"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/" data-title="mysql执行较大sql脚本导致服务器跟目录占满"><i class="fa-brands fa-hacker-news fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/" data-title="mysql执行较大sql脚本导致服务器跟目录占满"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/" data-title="mysql执行较大sql脚本导致服务器跟目录占满"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/" data-title="MySQL执行较大sql脚本导致服务器跟目录占满"><i class="fa-brands fa-hacker-news fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/" data-title="MySQL执行较大sql脚本导致服务器跟目录占满"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/" data-title="MySQL执行较大sql脚本导致服务器跟目录占满"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
       </div>
     </div>
@@ -391,7 +396,7 @@
     </section>
   </div>
 
-  <div class="post-nav"><a href="/post/mysql/2023-05-21/mysql_k8s/" class="post-nav-item" rel="prev" title="K8S部署MySQL-5.7"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>K8S部署MySQL-5.7</a>
+  <div class="post-nav"><a href="/post/mysql/2023-05-21/mysql_k8s/" class="post-nav-item" rel="prev" title="K8S部署MySQL 5.7"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>K8S部署MySQL 5.7</a>
       <a href="/post/ide/idea/2023-05-28/idea_v2022&#43;_commit_view_window/" class="post-nav-item" rel="next" title="IDEA 2022版本没有commit对话框">IDEA 2022版本没有commit对话框<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div class="post-reward">

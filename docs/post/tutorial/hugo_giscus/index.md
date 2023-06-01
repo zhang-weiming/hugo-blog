@@ -1,8 +1,6 @@
 # Hugo博客开启Giscus评论功能
 
 
-## 介绍
-
 [Giscus](https://giscus.app/)是利用[GitHub Discussions](https://docs.github.com/en/discussions)实现的评论系统，让访客借助 GitHub 在你的网站上留下评论和反应。
 
 - 开源。🌏
@@ -13,6 +11,8 @@
 - 高可配置性。🔧
 - 自动从 GitHub 拉取新评论与编辑。🔃
 - 可自建服务！🤳
+
+<!--more-->
 
 ## 准备工作
 

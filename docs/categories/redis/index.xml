@@ -5,12 +5,15 @@
     <description>Redis - 分类 - 张大锅</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
       <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 21 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/categories/redis/" rel="self" type="application/rss+xml" /><item>
-  <title>K8S部署Redis-3.0.7</title>
+  <title>K8S部署Redis 3.0.7</title>
   <link>https://zhang-weiming.github.io/post/redis/2023-05-21/redis_k8s/</link>
   <pubDate>Sun, 21 May 2023 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/redis/2023-05-21/redis_k8s/</guid>
-  <description><![CDATA[k8s部署redis 3.0.7 Deployment 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 apiVersion: apps/v1]]></description>
+  <description><![CDATA[<ul>
+<li>使用<code>ConfigMap</code>自定义redis相关配置</li>
+<li>NodePort方式暴露端口</li>
+</ul>]]></description>
 </item>
 </channel>
 </rss>

@@ -10,7 +10,7 @@
   <pubDate>Thu, 09 Mar 2023 23:57:22 &#43;0800</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</guid>
-  <description><![CDATA[问题现象 project服务默认使用端口80，我们通过修改配置，将其端口修改为A，并增加路由前缀/project/。 现在，project服务访]]></description>
+  <description><![CDATA[<p>解决Nginx反向代理服务后，在页面跳转过程中，重定向的URL丢失了端口，导致页面访问异常。</p>]]></description>
 </item>
 </channel>
 </rss>

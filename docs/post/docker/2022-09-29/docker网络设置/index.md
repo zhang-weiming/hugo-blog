@@ -1,16 +1,16 @@
 # Docker网络设置
 
 
-## 问题描述
-
 虚拟机里，docker 容器部署的 nacos-ruoyi 无法访问到 docker 容器部署的 mysql 数据库
 
-## 问题原因解析
+<!--more-->
+
+## 原因解析
 
 这个问题是由 docker 本身的网络设置导致的。
 
 安装docker时，docker会默认创建一个内部的桥接网络docker0，见下方样例。每创建一个容器分配一个虚拟网卡，容器之间可以根据ip互相访问。
-``` sh
+```shell
 [root@33fcf82ab4dd /]# [root@CentOS ~]# ifconfig
 ......
 docker0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
@@ -27,16 +27,18 @@ docker0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 ## 解决
 
-- 输入 docker inspect 命令，查询 mysql-ruoyi 容器的虚拟网卡IP
-``` sh
-[root@localhost conf]# docker inspect mysql-ruoyi | grep IPAddress
-            "SecondaryIPAddresses": null,
-            "IPAddress": "172.17.0.2",
-                    "IPAddress": "172.17.0.2",
-```
-- 修改 nacos 启动配置文件中的 mysql IP
-- 重启 nacos-ruoyi 容器
-- 浏览器输入 http://192.168.133.128:8848/nacos/ ，访问正常
+1. 输入`docker inspect`命令，查询容器的虚拟网卡IP：
+    ```shell
+    [root@localhost conf]# docker inspect mysql-ruoyi | grep IPAddress
+                ...
+                "SecondaryIPAddresses": null,
+                "IPAddress": "172.17.0.2",
+                        "IPAddress": "172.17.0.2",
+                ...
+    ```
+2. 修改 nacos 启动配置文件中的 mysql IP
+3. 重启容器
+4. 浏览器输入页面地址，验证访问正常
 
 ## 参考
 

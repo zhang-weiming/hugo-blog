@@ -12,7 +12,17 @@
   <pubDate>Sun, 28 May 2023 07:53:27 &#43;0800</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/tutorial/hugo_giscus/</guid>
-  <description><![CDATA[介绍 Giscus是利用GitHub Discussions实现的评论系统，让访客借助 GitHub 在你的网站上留下评论和反应。 开源。🌏 无跟踪，无广告，永久]]></description>
+  <description><![CDATA[<p><a href="https://giscus.app/"target="_blank" rel="external nofollow noopener noreferrer">Giscus<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>是利用<a href="https://docs.github.com/en/discussions"target="_blank" rel="external nofollow noopener noreferrer">GitHub Discussions<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>实现的评论系统，让访客借助 GitHub 在你的网站上留下评论和反应。</p>
+<ul>
+<li>开源。🌏</li>
+<li>无跟踪，无广告，永久免费。📡 🚫</li>
+<li>无需数据库。所有数据均储存在 GitHub Discussions 中。:octocat:</li>
+<li>支持自定义主题！🌗</li>
+<li>支持多种语言。🌐</li>
+<li>高可配置性。🔧</li>
+<li>自动从 GitHub 拉取新评论与编辑。🔃</li>
+<li>可自建服务！🤳</li>
+</ul>]]></description>
 </item>
 <item>
   <title>IDEA 2022版本没有commit对话框</title>
@@ -20,39 +30,48 @@
   <pubDate>Sun, 28 May 2023 04:18:06 &#43;0800</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/ide/idea/2023-05-28/idea_v2022&#43;_commit_view_window/</guid>
-  <description><![CDATA[需求 老版本的IDEA在project下面都有一个commit的对话框，但是在2022版本默认没有这个。 解决 打开方式：Settings -&gt; Version Contrl -&gt;]]></description>
+  <description><![CDATA[<p></p>
+<p>老版本的IDEA在左侧的Project tab页下面都有一个Commit的对话框，但是在2022版本里默认不显示。</p>]]></description>
 </item>
 <item>
-  <title>mysql执行较大sql脚本导致服务器跟目录占满</title>
+  <title>MySQL执行较大sql脚本导致服务器跟目录占满</title>
   <link>https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/</link>
   <pubDate>Mon, 22 May 2023 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/</guid>
-  <description><![CDATA[问题描述 删除一个较大体量的数据库后，发现mysql无法正常执行sql脚本，并给出以下报错： 1 [error]/tmp/ib1tJjCi file has no space left 同时，发现服务器磁盘根目录满了！ 1 2]]></description>
+  <description><![CDATA[<p>年轻人，要善用临时表&hellip;</p>]]></description>
 </item>
 <item>
-  <title>K8S部署MySQL-5.7</title>
+  <title>K8S部署MySQL 5.7</title>
   <link>https://zhang-weiming.github.io/post/mysql/2023-05-21/mysql_k8s/</link>
   <pubDate>Sun, 21 May 2023 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/mysql/2023-05-21/mysql_k8s/</guid>
-  <description><![CDATA[k8s部署MySQL 5.7 ConfigMap 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 apiVersion: v1 kind: ConfigMap metadata: name: mysql-config namespace: mysql labels: app: mysql data: my.cnf: |- [client] default-character-set=utf8mb4 [mysql] default-character-set=utf8mb4 [mysqld] character-set-server = utf8mb4 collation-server = utf8mb4_unicode_ci init_connect=&#39;SET NAMES utf8mb4&#39; skip-character-set-client-handshake = true max_connections=2000 secure_file_priv=/var/lib/mysql bind-address=0.0.0.0]]></description>
+  <description><![CDATA[<ul>
+<li>使用<code>ConfigMap</code>自定义mysql相关配置</li>
+<li>持久化目录挂载</li>
+<li>NodePort方式暴露端口</li>
+</ul>]]></description>
 </item>
 <item>
-  <title>K8S部署Redis-3.0.7</title>
+  <title>K8S部署Redis 3.0.7</title>
   <link>https://zhang-weiming.github.io/post/redis/2023-05-21/redis_k8s/</link>
   <pubDate>Sun, 21 May 2023 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/redis/2023-05-21/redis_k8s/</guid>
-  <description><![CDATA[k8s部署redis 3.0.7 Deployment 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 apiVersion: apps/v1]]></description>
+  <description><![CDATA[<ul>
+<li>使用<code>ConfigMap</code>自定义redis相关配置</li>
+<li>NodePort方式暴露端口</li>
+</ul>]]></description>
 </item>
 <item>
-  <title>Theiaide主机部署</title>
+  <title>TheiaIDE安装部署时，可能出现的几个问题</title>
   <link>https://zhang-weiming.github.io/post/ide/webide/2023-05-10/theiaide_installation/</link>
   <pubDate>Wed, 10 May 2023 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/ide/webide/2023-05-10/theiaide_installation/</guid>
-  <description><![CDATA[简介 theiaide安装过程中诸多报错问题解决记录文档。 代码：https://github.com/eclipse-theia/theia 文]]></description>
+  <description><![CDATA[<p>在安装TheiaIDE过程中，遇到诸多报错问题，在此记录一下问题解决过程。</p>
+<p>官方给出的安装过程相关命令，简洁的让人觉得不简单&hellip;</p>]]></description>
 </item>
 <item>
   <title>Nginx代理后，端口丢失和https变为http的问题</title>
@@ -60,7 +79,7 @@
   <pubDate>Thu, 09 Mar 2023 23:57:22 &#43;0800</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</guid>
-  <description><![CDATA[问题现象 project服务默认使用端口80，我们通过修改配置，将其端口修改为A，并增加路由前缀/project/。 现在，project服务访]]></description>
+  <description><![CDATA[<p>解决Nginx反向代理服务后，在页面跳转过程中，重定向的URL丢失了端口，导致页面访问异常。</p>]]></description>
 </item>
 <item>
   <title>hugo开发博客</title>
@@ -68,7 +87,23 @@
   <pubDate>Sat, 25 Feb 2023 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/tutorial/hugo_tutorial/</guid>
-  <description><![CDATA[总结日常百度的技术知识 记录工作中遇到的技术难题及解决方法 &hellip; 关键目录说明 demo案例 博客创建工具 hugo 新建博客仓库 1 hugo new site &lt;仓库名&gt; 关]]></description>
+  <description><![CDATA[<ul>
+<li>
+<p>总结日常百度的技术知识</p>
+</li>
+<li>
+<p>记录工作中遇到的技术难题及解决方法</p>
+</li>
+<li>
+<p>&hellip;</p>
+</li>
+<li>
+<p><i class="fa-regular fa-square fa-fw" aria-hidden="true"></i> 关键目录说明</p>
+</li>
+<li>
+<p><i class="fa-regular fa-square fa-fw" aria-hidden="true"></i> demo案例</p>
+</li>
+</ul>]]></description>
 </item>
 <item>
   <title>Docker容器重启IP不固定</title>
@@ -76,7 +111,7 @@
   <pubDate>Tue, 04 Oct 2022 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</guid>
-  <description><![CDATA[问题描述 docker 容器重启后IP可能会变。 问题原因解析 这里需要借助 docker 和 Linux 的网桥来给容器设置固定网络下的IP。 docker 有默认的网桥设置，默认网桥叫 docke]]></description>
+  <description><![CDATA[<p>docker 容器重启后IP可能会变&hellip;</p>]]></description>
 </item>
 <item>
   <title>Docker服务启动时，容器自动被拉起</title>
@@ -84,7 +119,8 @@
   <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</guid>
-  <description><![CDATA[问题描述 每次启动虚拟机，docker 服务会自动启动，同时发现总是有几个容器会自动被启动。 而我们期望的是，docker服务自启动后，运行中的容]]></description>
+  <description><![CDATA[<p>每次启动虚拟机，docker 服务会自动启动，同时发现是总是有几个不需要的容器会被自动拉起&hellip;</p>
+<p>期望是，docker服务自启动或重启后，正在运行中的容器中只有我们想要的。</p>]]></description>
 </item>
 </channel>
 </rss>

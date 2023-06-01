@@ -10,7 +10,8 @@
   <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</guid>
-  <description><![CDATA[问题描述 每次启动虚拟机，docker 服务会自动启动，同时发现总是有几个容器会自动被启动。 而我们期望的是，docker服务自启动后，运行中的容]]></description>
+  <description><![CDATA[<p>每次启动虚拟机，docker 服务会自动启动，同时发现是总是有几个不需要的容器会被自动拉起&hellip;</p>
+<p>期望是，docker服务自启动或重启后，正在运行中的容器中只有我们想要的。</p>]]></description>
 </item>
 </channel>
 </rss>

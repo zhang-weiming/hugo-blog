@@ -1,11 +1,15 @@
-# K8S部署MySQL-5.7
+# K8S部署MySQL 5.7
 
 
-## k8s部署MySQL 5.7
+- 使用`ConfigMap`自定义mysql相关配置
+- 持久化目录挂载
+- NodePort方式暴露端口
+
+<!--more-->
 
 ### ConfigMap
 
-``` yaml
+```yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -33,7 +37,7 @@ data:
 
 ### Service
 
-``` yaml
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -54,7 +58,11 @@ spec:
 
 ### Deployment
 
-``` yaml
+这里是用`hostPath`方式挂载了主机目录，不推荐在生产环境中使用这种目录挂载方式，因为一旦Pod重启，可能会由于重新调度而发生漂移，新Pod被起在其他机器节点上，导致数据丢失。
+
+建议使用`nfs`，以`PVC`的形式挂载持久化数据目录。
+
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:

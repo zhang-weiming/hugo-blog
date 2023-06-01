@@ -1,7 +1,7 @@
 ---
 type: posts
 reward: true
-title: "mysql执行较大sql脚本导致服务器跟目录占满"
+title: "MySQL执行较大sql脚本导致服务器跟目录占满"
 date: 2023-05-22
 draft: false
 tags: ["mysql", "linux", "ibtmp1", "error"]
@@ -12,6 +12,10 @@ toc:
 categories:
   - MySQL
 ---
+
+年轻人，要善用临时表...
+
+<!--more-->
 
 ## 问题描述
 
@@ -70,12 +74,16 @@ mysqld    19544 20138          mysql    9u      REG              253,3          
 ## 解决
 
 1. 修改 my.cnf 配置文件
-```shell
+
+在 [mysqld] 下添加如下配置：
+```editorconfig
+[mysqld]
+...
 innodb_temp_data_file_path = ibtmp1:12M:autoextend:max:5G
 ```
 
 2. 进入mysql命令行，设置 innodb_fast_shutdown 参数
-```shell
+```mysql-sql
 SET GLOBAL innodb_fast_shutdown = 0;
 ```
 
@@ -84,7 +92,7 @@ SET GLOBAL innodb_fast_shutdown = 0;
 systemctl stop mysqld
 ```
 
-4. 删除 ibtmp1 文件（重启自动删除）
+4. 删除 ibtmp1 文件（重启过程中会自动删除）
 
 5. 启动 mysql 服务
 ```shell

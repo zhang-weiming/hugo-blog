@@ -24,7 +24,7 @@ description = "张大锅的博客"
   [home.profile]
     enable = true
     gravatarEmail = ""
-    avatarURL = "/images/avatar.png"
+    avatarURL = "/img/programmer.png"
     avatarMenu = ""
     title = ""
     subtitle = ""

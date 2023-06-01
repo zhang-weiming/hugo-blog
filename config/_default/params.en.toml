@@ -22,7 +22,7 @@
   [home.profile]
     enable = true
     gravatarEmail = ""
-    avatarURL = "/images/avatar.png"
+    avatarURL = "/img/programmer.png"
     avatarMenu = ""
     title = ""
     subtitle = "A Clean, Elegant but Advanced Hugo Theme"

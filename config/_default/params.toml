@@ -118,7 +118,7 @@ disableThemeInject = false
   [header.title]
     # URL of the LOGO
     # LOGO 的 URL，以static目录为根目录，但不包含static，例如：/img/alipay.jpg
-    logo = ""
+    logo = "/img/favicon.ico"
     # title name
     # 标题名称
     name = "张大锅"
@@ -761,7 +761,7 @@ disableThemeInject = false
     # 出版者信息
     [page.seo.publisher]
       name = "张大锅"
-      logoUrl = "/images/avatar.png"
+      logoUrl = "/img/favicon.ico"
 
 # TypeIt config
 # TypeIt 配置

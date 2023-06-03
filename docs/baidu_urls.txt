@@ -1,3 +1,5 @@
+https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/
+https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/
 https://zhang-weiming.github.io/post/tutorial/hugo_giscus/
 https://zhang-weiming.github.io/post/ide/idea/2023-05-28/idea_v2022&#43;_commit_view_window/
 https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/

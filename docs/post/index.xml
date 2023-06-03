@@ -10,6 +10,24 @@
     <webMaster>1210500550@qq.com (张大锅)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://zhang-weiming.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>nvm安装教程</title>
+      <link>https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/</link>
+      <pubDate>Sat, 03 Jun 2023 14:02:38 +0800</pubDate>
+      <author>1210500550@qq.com (张大锅)</author>
+      <guid>https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/nvm-sh/nvm&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;nvm&lt;i class=&#34;fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/a&gt;安装教程，以&lt;code&gt;v0.39.3&lt;/code&gt;版本为例。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>websocket服务在nginx中代理后无法正常连接</title>
+      <link>https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/</link>
+      <pubDate>Fri, 02 Jun 2023 20:30:04 +0800</pubDate>
+      <author>1210500550@qq.com (张大锅)</author>
+      <guid>https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/</guid>
+      <description>&lt;p&gt;nginx配置中，在443端口配了ssl证书，基于nginx代理地址访问websocket服务异常。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Hugo博客开启Giscus评论功能</title>
       <link>https://zhang-weiming.github.io/post/tutorial/hugo_giscus/</link>
       <pubDate>Sun, 28 May 2023 07:53:27 +0800</pubDate>

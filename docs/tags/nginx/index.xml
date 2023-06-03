@@ -4,7 +4,15 @@
     <link>https://zhang-weiming.github.io/tags/nginx/</link>
     <description>nginx - 标签 - 张大锅</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
-      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 09 Mar 2023 23:57:22 &#43;0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/nginx/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/nginx/" rel="self" type="application/rss+xml" /><item>
+  <title>websocket服务在nginx中代理后无法正常连接</title>
+  <link>https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/</link>
+  <pubDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/</guid>
+  <description><![CDATA[<p>nginx配置中，在443端口配了ssl证书，基于nginx代理地址访问websocket服务异常。</p>]]></description>
+</item>
+<item>
   <title>Nginx代理后，端口丢失和https变为http的问题</title>
   <link>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</link>
   <pubDate>Thu, 09 Mar 2023 23:57:22 &#43;0800</pubDate>

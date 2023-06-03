@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/mnt/c/work/learning/blog/zhang-weiming.github.io",
+	"sourceRoot": "/mnt/d/work/blog/zhang-weiming.github.io",
 	"sources": [
 		"themes/FixIt/assets/css/style.scss",
 		"themes/FixIt/assets/css/_variables.scss",

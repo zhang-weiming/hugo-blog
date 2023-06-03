@@ -4,9 +4,25 @@
     <link>https://zhang-weiming.github.io/</link>
     <description>张大锅的博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
-      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 May 2023 07:53:27 &#43;0800</lastBuildDate>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 03 Jun 2023 14:02:38 &#43;0800</lastBuildDate>
       <atom:link href="https://zhang-weiming.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>nvm安装教程</title>
+  <link>https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/</link>
+  <pubDate>Sat, 03 Jun 2023 14:02:38 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/</guid>
+  <description><![CDATA[<p><a href="https://github.com/nvm-sh/nvm"target="_blank" rel="external nofollow noopener noreferrer">nvm<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>安装教程，以<code>v0.39.3</code>版本为例。</p>]]></description>
+</item>
+<item>
+  <title>websocket服务在nginx中代理后无法正常连接</title>
+  <link>https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/</link>
+  <pubDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/</guid>
+  <description><![CDATA[<p>nginx配置中，在443端口配了ssl证书，基于nginx代理地址访问websocket服务异常。</p>]]></description>
+</item>
+<item>
   <title>Hugo博客开启Giscus评论功能</title>
   <link>https://zhang-weiming.github.io/post/tutorial/hugo_giscus/</link>
   <pubDate>Sun, 28 May 2023 07:53:27 &#43;0800</pubDate>
@@ -104,23 +120,6 @@
 <p><i class="fa-regular fa-square fa-fw" aria-hidden="true"></i> demo案例</p>
 </li>
 </ul>]]></description>
-</item>
-<item>
-  <title>Docker容器重启IP不固定</title>
-  <link>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</link>
-  <pubDate>Tue, 04 Oct 2022 00:00:00 &#43;0000</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</guid>
-  <description><![CDATA[<p>docker 容器重启后IP可能会变&hellip;</p>]]></description>
-</item>
-<item>
-  <title>Docker服务启动时，容器自动被拉起</title>
-  <link>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</link>
-  <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/post/docker/2022-09-29/docker%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%97%B6%E5%AE%B9%E5%99%A8%E8%87%AA%E5%8A%A8%E8%A2%AB%E6%8B%89%E8%B5%B7/</guid>
-  <description><![CDATA[<p>每次启动虚拟机，docker 服务会自动启动，同时发现是总是有几个不需要的容器会被自动拉起&hellip;</p>
-<p>期望是，docker服务自启动或重启后，正在运行中的容器中只有我们想要的。</p>]]></description>
 </item>
 </channel>
 </rss>

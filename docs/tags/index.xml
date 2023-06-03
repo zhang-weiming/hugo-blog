@@ -4,7 +4,63 @@
     <link>https://zhang-weiming.github.io/tags/</link>
     <description>Tags - 标签 - 张大锅</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
-      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 May 2023 07:53:27 &#43;0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 03 Jun 2023 14:02:38 &#43;0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>installation</title>
+  <link>https://zhang-weiming.github.io/tags/installation/</link>
+  <pubDate>Sat, 03 Jun 2023 14:02:38 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/tags/installation/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>nvm</title>
+  <link>https://zhang-weiming.github.io/tags/nvm/</link>
+  <pubDate>Sat, 03 Jun 2023 14:02:38 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/tags/nvm/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>nginx</title>
+  <link>https://zhang-weiming.github.io/tags/nginx/</link>
+  <pubDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/tags/nginx/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>socket</title>
+  <link>https://zhang-weiming.github.io/tags/socket/</link>
+  <pubDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/tags/socket/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>spring</title>
+  <link>https://zhang-weiming.github.io/tags/spring/</link>
+  <pubDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/tags/spring/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>springboot</title>
+  <link>https://zhang-weiming.github.io/tags/springboot/</link>
+  <pubDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/tags/springboot/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>websocket</title>
+  <link>https://zhang-weiming.github.io/tags/websocket/</link>
+  <pubDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/tags/websocket/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>discussion</title>
   <link>https://zhang-weiming.github.io/tags/discussion/</link>
   <pubDate>Sun, 28 May 2023 07:53:27 &#43;0800</pubDate>
@@ -26,62 +82,6 @@
   <pubDate>Sun, 28 May 2023 07:53:27 &#43;0800</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/tags/hugo/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>评论</title>
-  <link>https://zhang-weiming.github.io/tags/%E8%AF%84%E8%AE%BA/</link>
-  <pubDate>Sun, 28 May 2023 07:53:27 &#43;0800</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/tags/%E8%AF%84%E8%AE%BA/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>commit</title>
-  <link>https://zhang-weiming.github.io/tags/commit/</link>
-  <pubDate>Sun, 28 May 2023 04:18:06 &#43;0800</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/tags/commit/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>idea</title>
-  <link>https://zhang-weiming.github.io/tags/idea/</link>
-  <pubDate>Sun, 28 May 2023 04:18:06 &#43;0800</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/tags/idea/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>error</title>
-  <link>https://zhang-weiming.github.io/tags/error/</link>
-  <pubDate>Mon, 22 May 2023 00:00:00 &#43;0000</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/tags/error/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>ibtmp1</title>
-  <link>https://zhang-weiming.github.io/tags/ibtmp1/</link>
-  <pubDate>Mon, 22 May 2023 00:00:00 &#43;0000</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/tags/ibtmp1/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>linux</title>
-  <link>https://zhang-weiming.github.io/tags/linux/</link>
-  <pubDate>Mon, 22 May 2023 00:00:00 &#43;0000</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/tags/linux/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>mysql</title>
-  <link>https://zhang-weiming.github.io/tags/mysql/</link>
-  <pubDate>Mon, 22 May 2023 00:00:00 &#43;0000</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/tags/mysql/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>nvm - 标签 - 张大锅</title>
+    <link>https://zhang-weiming.github.io/tags/nvm/</link>
+    <description>nvm - 标签 - 张大锅</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 03 Jun 2023 14:02:38 &#43;0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/nvm/" rel="self" type="application/rss+xml" /><item>
+  <title>nvm安装教程</title>
+  <link>https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/</link>
+  <pubDate>Sat, 03 Jun 2023 14:02:38 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/</guid>
+  <description><![CDATA[<p><a href="https://github.com/nvm-sh/nvm"target="_blank" rel="external nofollow noopener noreferrer">nvm<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>安装教程，以<code>v0.39.3</code>版本为例。</p>]]></description>
+</item>
+</channel>
+</rss>

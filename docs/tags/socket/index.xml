@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>socket - 标签 - 张大锅</title>
+    <link>https://zhang-weiming.github.io/tags/socket/</link>
+    <description>socket - 标签 - 张大锅</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/socket/" rel="self" type="application/rss+xml" /><item>
+  <title>websocket服务在nginx中代理后无法正常连接</title>
+  <link>https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/</link>
+  <pubDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/</guid>
+  <description><![CDATA[<p>nginx配置中，在443端口配了ssl证书，基于nginx代理地址访问websocket服务异常。</p>]]></description>
+</item>
+</channel>
+</rss>

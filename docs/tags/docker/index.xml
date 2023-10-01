@@ -4,7 +4,15 @@
     <link>https://zhang-weiming.github.io/tags/docker/</link>
     <description>Docker - 标签 - 张大锅</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
-      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/docker/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 30 Sep 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/docker/" rel="self" type="application/rss+xml" /><item>
+  <title>Docker部署minio</title>
+  <link>https://zhang-weiming.github.io/post/minio/installation/</link>
+  <pubDate>Sat, 30 Sep 2023 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/minio/installation/</guid>
+  <description><![CDATA[<p>docker部署minio过程记录</p>]]></description>
+</item>
+<item>
   <title>Docker容器重启IP不固定</title>
   <link>https://zhang-weiming.github.io/post/docker/2022-10-04/docker%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AFip%E4%B8%8D%E5%9B%BA%E5%AE%9A/</link>
   <pubDate>Tue, 04 Oct 2022 00:00:00 &#43;0000</pubDate>

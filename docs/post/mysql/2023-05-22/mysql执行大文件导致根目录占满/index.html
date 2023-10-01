@@ -9,14 +9,14 @@
 <meta name="author-link" content="https://zhang-weiming.github.io/">
 <meta name="description" content="年轻人，要善用临时表&hellip;" /><meta name="keywords" content='mysql, linux, ibtmp1, error' /><meta itemprop="name" content="MySQL执行较大sql脚本导致服务器跟目录占满">
 <meta itemprop="description" content="年轻人，要善用临时表&hellip;"><meta itemprop="datePublished" content="2023-05-22T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-06-01T21:16:51+08:00" />
+<meta itemprop="dateModified" content="2023-09-30T23:55:30+08:00" />
 <meta itemprop="wordCount" content="840"><meta itemprop="image" content="https://zhang-weiming.github.io/logo.png"/>
 <meta itemprop="keywords" content="mysql,linux,ibtmp1,error," /><meta property="og:title" content="MySQL执行较大sql脚本导致服务器跟目录占满" />
 <meta property="og:description" content="年轻人，要善用临时表&hellip;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zhang-weiming.github.io/post/mysql/2023-05-22/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1/" /><meta property="og:image" content="https://zhang-weiming.github.io/logo.png"/><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-05-22T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-06-01T21:16:51+08:00" />
+<meta property="article:modified_time" content="2023-09-30T23:55:30+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://zhang-weiming.github.io/logo.png"/>
 
@@ -35,7 +35,7 @@
       "@type": "WebPage",
       "@id": "https:\/\/zhang-weiming.github.io\/post\/mysql\/2023-05-22\/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1\/"
     },"image": ["https:\/\/zhang-weiming.github.io\/images\/Apple-Devices-Preview.jpg"],"genre": "posts","keywords": "mysql, linux, ibtmp1, error","wordcount":  840 ,
-    "url": "https:\/\/zhang-weiming.github.io\/post\/mysql\/2023-05-22\/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1\/","datePublished": "2023-05-22T00:00:00+00:00","dateModified": "2023-06-01T21:16:51+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+    "url": "https:\/\/zhang-weiming.github.io\/post\/mysql\/2023-05-22\/mysql%E6%89%A7%E8%A1%8C%E5%A4%A7%E6%96%87%E4%BB%B6%E5%AF%BC%E8%87%B4%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8D%A0%E6%BB%A1\/","datePublished": "2023-05-22T00:00:00+00:00","dateModified": "2023-09-30T23:55:30+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
       "@type": "Organization",
       "name": "张大锅","logo": "https:\/\/zhang-weiming.github.io\/img\/favicon.ico"},"author": {
         "@type": "Person",
@@ -179,7 +179,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://zhang-weiming.github.io/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp" srcset="https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp, https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp 1.5x, https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp 2x" sizes="auto" data-title="张大锅" data-alt="张大锅" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;张大锅</a></span>
           <span class="post-category">收录于 <a href="/categories/mysql/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> MySQL</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-05-22 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-22">2023-05-22</time></span>&nbsp;<span title="更新于 2023-06-01 21:16:51"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-01">2023-06-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 840 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="MySQL执行较大sql脚本导致服务器跟目录占满">
+      <div class="post-meta-line"><span title="发布于 2023-05-22 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-22">2023-05-22</time></span>&nbsp;<span title="更新于 2023-09-30 23:55:30"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-30">2023-09-30</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 840 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="MySQL执行较大sql脚本导致服务器跟目录占满">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
             </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -200,16 +200,15 @@
       </div><div class="content" id="content"><p>年轻人，要善用临时表&hellip;</p>
 <h2 id="问题描述">问题描述</h2>
 <p>删除一个较大体量的数据库后，发现mysql无法正常执行sql脚本，并给出以下报错：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span>error<span class="o">]</span>/tmp/ib1tJjCi file has no space left
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span>error<span class="o">]</span>/tmp/ib1tJjCi file has no space left</span></span></code></pre></td></tr></table>
 </div>
 </div><p>同时，发现服务器磁盘根目录满了！</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -232,12 +231,11 @@
 </span></span><span class="line"><span class="cl">tmpfs                      32G     <span class="m">0</span>   32G   0% /sys/fs/cgroup
 </span></span><span class="line"><span class="cl">/dev/mapper/data-data_lv  600G   21G  579G   4% /data
 </span></span><span class="line"><span class="cl">/dev/vda1                 497M  123M  375M  25% /boot
-</span></span><span class="line"><span class="cl">tmpfs                     6.3G     <span class="m">0</span>  6.3G   0% /run/user/1002
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">tmpfs                     6.3G     <span class="m">0</span>  6.3G   0% /run/user/1002</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="问题定位">问题定位</h2>
 <p>执行命令：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -272,13 +270,12 @@
 </span></span><span class="line"><span class="cl">mysqld    <span class="m">19544</span> <span class="m">20138</span>          mysql    7u      REG              253,3          <span class="m">0</span>    <span class="m">8412302</span> /tmp/ibrctchx <span class="o">(</span>deleted<span class="o">)</span>
 </span></span><span class="line"><span class="cl">mysqld    <span class="m">19544</span> <span class="m">20138</span>          mysql    8u      REG              253,3          <span class="m">0</span>    <span class="m">8412305</span> /tmp/ibhPedj5 <span class="o">(</span>deleted<span class="o">)</span>
 </span></span><span class="line"><span class="cl">mysqld    <span class="m">19544</span> <span class="m">20138</span>          mysql    9u      REG              253,3          <span class="m">0</span>    <span class="m">8412317</span> /tmp/ib1tJjCi <span class="o">(</span>deleted<span class="o">)</span>
-</span></span><span class="line"><span class="cl">...
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">...</span></span></code></pre></td></tr></table>
 </div>
 </div><p>发现<code>mysqld</code>进程有大量临时文件没有释放磁盘空间。</p>
 <h2 id="进一步定位">进一步定位</h2>
 <p>进入mysql安装目录，发现ibtmp1文件非常大</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -291,15 +288,14 @@
 </span></span><span class="line"><span class="cl">-rw-r----- <span class="m">1</span> mysql mysql 268M May <span class="m">23</span> 00:13 ibdata1
 </span></span><span class="line"><span class="cl">-rw-r----- <span class="m">1</span> mysql mysql 3.0G May <span class="m">23</span> 00:13 ib_logfile0
 </span></span><span class="line"><span class="cl">-rw-r----- <span class="m">1</span> mysql mysql 3.0G May <span class="m">23</span> 00:13 ib_logfile1
-</span></span><span class="line"><span class="cl">-rw-r----- <span class="m">1</span> mysql mysql 142G May <span class="m">22</span> 23:57 ibtmp1
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">-rw-r----- <span class="m">1</span> mysql mysql 142G May <span class="m">22</span> 23:57 ibtmp1</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="解决">解决</h2>
 <ol>
 <li>修改 my.cnf 配置文件</li>
 </ol>
 <p>在 [mysqld] 下添加如下配置：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -308,30 +304,27 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[mysqld]
 </span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl">innodb_temp_data_file_path = ibtmp1:12M:autoextend:max:5G
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">innodb_temp_data_file_path = ibtmp1:12M:autoextend:max:5G</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
 <li>进入mysql命令行，设置 innodb_fast_shutdown 参数</li>
 </ol>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SET GLOBAL innodb_fast_shutdown = 0;
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SET GLOBAL innodb_fast_shutdown = 0;</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="3">
 <li>关闭 mysql 服务</li>
 </ol>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">systemctl stop mysqld
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">systemctl stop mysqld</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="4">
 <li>
@@ -341,13 +334,12 @@
 <p>启动 mysql 服务</p>
 </li>
 </ol>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">systemctl start mysqld
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">systemctl start mysqld</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="知识链接">知识链接</h2>
 <p><code>innodb_fast_shutdown</code>参数有3个值：</p>
@@ -372,7 +364,7 @@
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title="更新于 2023-06-01 21:16:51">更新于 2023-06-01&nbsp;</span>
+        <span title="更新于 2023-09-30 23:55:30">更新于 2023-09-30&nbsp;</span>
       </div><div class="post-info-license">
           <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
         </div></div>

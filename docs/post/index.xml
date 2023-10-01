@@ -10,6 +10,15 @@
     <webMaster>1210500550@qq.com (张大锅)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://zhang-weiming.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Docker部署minio</title>
+      <link>https://zhang-weiming.github.io/post/minio/installation/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+      <author>1210500550@qq.com (张大锅)</author>
+      <guid>https://zhang-weiming.github.io/post/minio/installation/</guid>
+      <description>&lt;p&gt;docker部署minio过程记录&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>nvm安装教程</title>
       <link>https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/</link>
       <pubDate>Sat, 03 Jun 2023 14:02:38 +0800</pubDate>

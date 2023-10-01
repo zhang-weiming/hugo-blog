@@ -9,14 +9,14 @@
 <meta name="author-link" content="https://zhang-weiming.github.io/">
 <meta name="description" content="nvm安装教程，以v0.39.3版本为例。" /><meta name="keywords" content='nvm, installation' /><meta itemprop="name" content="nvm安装教程">
 <meta itemprop="description" content="nvm安装教程，以v0.39.3版本为例。"><meta itemprop="datePublished" content="2023-06-03T14:02:38+08:00" />
-<meta itemprop="dateModified" content="2023-06-03T14:45:49+08:00" />
+<meta itemprop="dateModified" content="2023-09-30T23:55:30+08:00" />
 <meta itemprop="wordCount" content="271"><meta itemprop="image" content="https://zhang-weiming.github.io/logo.png"/>
 <meta itemprop="keywords" content="nvm,installation," /><meta property="og:title" content="nvm安装教程" />
 <meta property="og:description" content="nvm安装教程，以v0.39.3版本为例。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/" /><meta property="og:image" content="https://zhang-weiming.github.io/logo.png"/><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-06-03T14:02:38+08:00" />
-<meta property="article:modified_time" content="2023-06-03T14:45:49+08:00" />
+<meta property="article:modified_time" content="2023-09-30T23:55:30+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://zhang-weiming.github.io/logo.png"/>
 
@@ -25,7 +25,7 @@
 <meta name="application-name" content="FixIt">
 <meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/" /><link rel="prev" href="https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/" /><link rel="prev" href="https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/" /><link rel="next" href="https://zhang-weiming.github.io/post/minio/installation/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
@@ -35,7 +35,7 @@
       "@type": "WebPage",
       "@id": "https:\/\/zhang-weiming.github.io\/post\/tutorial\/nvm\/nvm_installation\/"
     },"image": ["https:\/\/zhang-weiming.github.io\/images\/Apple-Devices-Preview.jpg"],"genre": "posts","keywords": "nvm, installation","wordcount":  271 ,
-    "url": "https:\/\/zhang-weiming.github.io\/post\/tutorial\/nvm\/nvm_installation\/","datePublished": "2023-06-03T14:02:38+08:00","dateModified": "2023-06-03T14:45:49+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+    "url": "https:\/\/zhang-weiming.github.io\/post\/tutorial\/nvm\/nvm_installation\/","datePublished": "2023-06-03T14:02:38+08:00","dateModified": "2023-09-30T23:55:30+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
       "@type": "Organization",
       "name": "张大锅","logo": "https:\/\/zhang-weiming.github.io\/img\/favicon.ico"},"author": {
         "@type": "Person",
@@ -178,7 +178,7 @@
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>nvm安装教程</span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://zhang-weiming.github.io/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp" srcset="https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp, https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp 1.5x, https://gravatar.loli.net/avatar/098929b5b0020e2d44d6817064d456c9?s=32&amp;d=mp 2x" sizes="auto" data-title="张大锅" data-alt="张大锅" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;张大锅</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-06-03 14:02:38"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-03">2023-06-03</time></span>&nbsp;<span title="更新于 2023-06-03 14:45:49"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-03">2023-06-03</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 271 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="nvm安装教程">
+      <div class="post-meta-line"><span title="发布于 2023-06-03 14:02:38"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-03">2023-06-03</time></span>&nbsp;<span title="更新于 2023-09-30 23:55:30"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-30">2023-09-30</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 271 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="nvm安装教程">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
             </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -215,7 +215,7 @@
 <li>在你的 shell 环境中激活 nvm：<code>. ./nvm.sh</code></li>
 </ol>
 <p>然后在你的环境变量配置文件中，加入以下几行，这样当你下次进入到命令行时会自动激活 nvm：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -224,21 +224,19 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">NVM_DIR</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/.nvm&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span> -s <span class="s2">&#34;</span><span class="nv">$NVM_DIR</span><span class="s2">/nvm.sh&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\.</span> <span class="s2">&#34;</span><span class="nv">$NVM_DIR</span><span class="s2">/nvm.sh&#34;</span>  <span class="c1"># This loads nvm</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span> -s <span class="s2">&#34;</span><span class="nv">$NVM_DIR</span><span class="s2">/bash_completion&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\.</span> <span class="s2">&#34;</span><span class="nv">$NVM_DIR</span><span class="s2">/bash_completion&#34;</span>  <span class="c1"># This loads nvm bash_completion</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="o">[</span> -s <span class="s2">&#34;</span><span class="nv">$NVM_DIR</span><span class="s2">/bash_completion&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\.</span> <span class="s2">&#34;</span><span class="nv">$NVM_DIR</span><span class="s2">/bash_completion&#34;</span>  <span class="c1"># This loads nvm bash_completion</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时，你已成功安装<code>nvm</code>工具！👏👏👏</p>
 <h3 id="更新版本">🚀更新版本</h3>
 <p>进入用户目录下的.nvm，然后切换到你想要的版本号（tag）即可。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> ~/.nvm
-</span></span><span class="line"><span class="cl">git checkout &lt;tag&gt;
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">git checkout &lt;tag&gt;</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="参考">参考</h2>
 <ul>
@@ -247,7 +245,7 @@
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title="更新于 2023-06-03 14:45:49">更新于 2023-06-03&nbsp;<a class="git-hash" href="https://github.com/hugo-fixit/docs/commit/f62b671385916d8bdd177606689828a8d681771b" rel="external nofollow noopener noreferrer" target="_blank" title="commit by zhang-weiming(zwm1210500550) f62b671385916d8bdd177606689828a8d681771b: 新增博客 - socket&#43;nginx问题解决 - nvm安装教程"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i>f62b671</a></span>
+        <span title="更新于 2023-09-30 23:55:30">更新于 2023-09-30&nbsp;<a class="git-hash" href="https://github.com/hugo-fixit/docs/commit/f62b671385916d8bdd177606689828a8d681771b" rel="external nofollow noopener noreferrer" target="_blank" title="commit by zhang-weiming(zwm1210500550) f62b671385916d8bdd177606689828a8d681771b: 新增博客 - socket&#43;nginx问题解决 - nvm安装教程"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i>f62b671</a></span>
       </div><div class="post-info-license">
           <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
         </div></div>
@@ -271,7 +269,8 @@
     </section>
   </div>
 
-  <div class="post-nav"><a href="/post/socket/spring/2023-06-02/socket_nginx_ssl/" class="post-nav-item" rel="prev" title="websocket服务在nginx中代理后无法正常连接"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>websocket服务在nginx中代理后无法正常连接</a></div>
+  <div class="post-nav"><a href="/post/socket/spring/2023-06-02/socket_nginx_ssl/" class="post-nav-item" rel="prev" title="websocket服务在nginx中代理后无法正常连接"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>websocket服务在nginx中代理后无法正常连接</a>
+      <a href="/post/minio/installation/" class="post-nav-item" rel="next" title="Docker部署minio">Docker部署minio<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div class="post-reward">
     <div class="comment">Buy me a coffee~</div>

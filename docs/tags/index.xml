@@ -4,7 +4,23 @@
     <link>https://zhang-weiming.github.io/tags/</link>
     <description>Tags - 标签 - 张大锅</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
-      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 03 Jun 2023 14:02:38 &#43;0800</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 30 Sep 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>Docker</title>
+  <link>https://zhang-weiming.github.io/tags/docker/</link>
+  <pubDate>Sat, 30 Sep 2023 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/tags/docker/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>minio</title>
+  <link>https://zhang-weiming.github.io/tags/minio/</link>
+  <pubDate>Sat, 30 Sep 2023 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/tags/minio/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>installation</title>
   <link>https://zhang-weiming.github.io/tags/installation/</link>
   <pubDate>Sat, 03 Jun 2023 14:02:38 &#43;0800</pubDate>
@@ -66,22 +82,6 @@
   <pubDate>Sun, 28 May 2023 07:53:27 &#43;0800</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/tags/discussion/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>giscus</title>
-  <link>https://zhang-weiming.github.io/tags/giscus/</link>
-  <pubDate>Sun, 28 May 2023 07:53:27 &#43;0800</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/tags/giscus/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>hugo</title>
-  <link>https://zhang-weiming.github.io/tags/hugo/</link>
-  <pubDate>Sun, 28 May 2023 07:53:27 &#43;0800</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/tags/hugo/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>metrics - 标签 - 张大锅</title>
+    <link>https://zhang-weiming.github.io/tags/metrics/</link>
+    <description>metrics - 标签 - 张大锅</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 13 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/metrics/" rel="self" type="application/rss+xml" /><item>
+  <title>SonarQube 指标</title>
+  <link>https://zhang-weiming.github.io/post/sonarqube/metrics/</link>
+  <pubDate>Fri, 13 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/sonarqube/metrics/</guid>
+  <description><![CDATA[<p>SonarQube 指标</p>]]></description>
+</item>
+</channel>
+</rss>

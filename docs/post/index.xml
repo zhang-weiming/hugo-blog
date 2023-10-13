@@ -10,6 +10,15 @@
     <webMaster>1210500550@qq.com (张大锅)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://zhang-weiming.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>SonarQube 指标</title>
+      <link>https://zhang-weiming.github.io/post/sonarqube/metrics/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <author>1210500550@qq.com (张大锅)</author>
+      <guid>https://zhang-weiming.github.io/post/sonarqube/metrics/</guid>
+      <description>&lt;p&gt;SonarQube 指标&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Docker部署minio</title>
       <link>https://zhang-weiming.github.io/post/minio/installation/</link>
       <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
   <head>
     
     <meta charset="utf-8">
@@ -170,9 +170,9 @@
         </li><li class="menu-item language-switch">
             <span role="button" aria-label="Select Language" title="Select Language"><i class="fa-solid fa-language fa-fw" aria-hidden="true"></i></span>
             <ul class="sub-menu"><li class="menu-item">
-                      <a href="/categories/" class="menu-link" title="简体中文">简体中文</a>
+                      <span class="menu-link text-secondary" title="English">English</span>
                     </li><li class="menu-item">
-                      <span class="menu-link text-secondary" title=""></span>
+                      <a href="/categories/" class="menu-link" title="简体中文">简体中文</a>
                     </li></ul>
           </li></ul>
     </nav>
@@ -283,8 +283,8 @@
                   rel="noopener noreferrer" target="_blank"
                 ><i class='fa-brands fa-github fa-fw' aria-hidden='true'></i> </a></li><li class="menu-item menu-system">
           <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span><span class="menu-system-item language-switch">
-              <span role="button" aria-label="Select Language" title="Select Language"><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i></span>
-              <select class="language-select" onchange="location = this.value;"><option value="/categories/">简体中文</option><option value="/en/categories/" selected disabled></option></select>
+              <span role="button" aria-label="Select Language" title="Select Language">English<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+              <select class="language-select" onchange="location = this.value;"><option value="/en/categories/" selected disabled>English</option><option value="/categories/">简体中文</option></select>
             </span></li>
       </ul>
     </nav>
@@ -295,8 +295,18 @@
   <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
   </div><main class="container"><div class="page archive"><h2 class="single-title animate__animated animate__pulse animate__faster">All Categories
-      <sup>0</sup>
-    </h2><div class="categories-card"></div></div></main><footer class="footer">
+      <sup>1</sup>
+    </h2><div class="categories-card"><div class="card-item">
+            <div class="card-item-wrapper">
+              <h3 class="card-item-title">
+                <a href='/en/categories/sonarqube/'>
+                  <i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i>
+                  SonarQube&nbsp;<sup>1</sup>
+                </a>
+              </h3><article class="archive-item">
+                  <a href="/en/post/sonarqube/metrics/" class="archive-item-link">SonarQube Metrics</a>
+                </article></div>
+          </div></div></div></main><footer class="footer">
     <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.112.0">Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.18"><img class="fixit-icon" src="/fixit.min.svg" alt="FixIt logo" />&nbsp;FixIt</a>
         </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2021 - 2023</span><span class="author" itemprop="copyrightHolder">

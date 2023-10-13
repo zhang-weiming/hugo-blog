@@ -4,9 +4,17 @@
     <link>https://zhang-weiming.github.io/</link>
     <description>张大锅的博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
-      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 30 Sep 2023 00:00:00 &#43;0000</lastBuildDate>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 13 Oct 2023 00:00:00 &#43;0000</lastBuildDate>
       <atom:link href="https://zhang-weiming.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>SonarQube 指标</title>
+  <link>https://zhang-weiming.github.io/post/sonarqube/metrics/</link>
+  <pubDate>Fri, 13 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/sonarqube/metrics/</guid>
+  <description><![CDATA[<p>SonarQube 指标</p>]]></description>
+</item>
+<item>
   <title>Docker部署minio</title>
   <link>https://zhang-weiming.github.io/post/minio/installation/</link>
   <pubDate>Sat, 30 Sep 2023 00:00:00 &#43;0000</pubDate>
@@ -96,14 +104,6 @@
   <guid>https://zhang-weiming.github.io/post/ide/webide/2023-05-10/theiaide_installation/</guid>
   <description><![CDATA[<p>在安装TheiaIDE过程中，遇到诸多报错问题，在此记录一下问题解决过程。</p>
 <p>官方给出的安装过程相关命令，简洁的让人觉得不简单&hellip;</p>]]></description>
-</item>
-<item>
-  <title>Nginx代理后，端口丢失和https变为http的问题</title>
-  <link>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</link>
-  <pubDate>Thu, 09 Mar 2023 23:57:22 &#43;0800</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/post/nginx/2023-03-09/nginx/</guid>
-  <description><![CDATA[<p>解决Nginx反向代理服务后，在页面跳转过程中，重定向的URL丢失了端口，导致页面访问异常。</p>]]></description>
 </item>
 </channel>
 </rss>

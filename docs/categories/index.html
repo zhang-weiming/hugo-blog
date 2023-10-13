@@ -67,9 +67,9 @@
         </li><li class="menu-item language-switch">
             <span role="button" aria-label="选择语言" title="选择语言"><i class="fa-solid fa-language fa-fw" aria-hidden="true"></i></span>
             <ul class="sub-menu"><li class="menu-item">
-                      <span class="menu-link text-secondary" title="简体中文">简体中文</span>
+                      <a href="/en/categories/" class="menu-link" title="English">English</a>
                     </li><li class="menu-item">
-                      <a href="/en/categories/" class="menu-link" title=""></a>
+                      <span class="menu-link text-secondary" title="简体中文">简体中文</span>
                     </li></ul>
           </li></ul>
     </nav>
@@ -138,7 +138,7 @@
                 ><i class='fa-brands fa-github fa-fw' aria-hidden='true'></i> </a></li><li class="menu-item menu-system">
           <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span><span class="menu-system-item language-switch">
               <span role="button" aria-label="选择语言" title="选择语言">简体中文<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i></span>
-              <select class="language-select" onchange="location = this.value;"><option value="/categories/" selected disabled>简体中文</option><option value="/en/categories/"></option></select>
+              <select class="language-select" onchange="location = this.value;"><option value="/en/categories/">English</option><option value="/categories/" selected disabled>简体中文</option></select>
             </span></li>
       </ul>
     </nav>
@@ -149,7 +149,7 @@
   <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
   </div><main class="container"><div class="page archive"><h2 class="single-title animate__animated animate__pulse animate__faster">所有分类
-      <sup>6</sup>
+      <sup>7</sup>
     </h2><div class="categories-card"><div class="card-item">
             <div class="card-item-wrapper">
               <h3 class="card-item-title">
@@ -217,6 +217,16 @@
                 </a>
               </h3><article class="archive-item">
                   <a href="/post/redis/2023-05-21/redis_k8s/" class="archive-item-link">K8S部署Redis 3.0.7</a>
+                </article></div>
+          </div><div class="card-item">
+            <div class="card-item-wrapper">
+              <h3 class="card-item-title">
+                <a href='/categories/sonarqube/'>
+                  <i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i>
+                  SonarQube&nbsp;<sup>1</sup>
+                </a>
+              </h3><article class="archive-item">
+                  <a href="/post/sonarqube/metrics/" class="archive-item-link">SonarQube 指标</a>
                 </article></div>
           </div></div></div></main><footer class="footer">
     <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.112.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.18"><img class="fixit-icon" src="/fixit.min.svg" alt="FixIt logo" />&nbsp;FixIt</a>

@@ -1,3 +1,4 @@
+https://zhang-weiming.github.io/post/sonarqube/metrics/
 https://zhang-weiming.github.io/post/minio/installation/
 https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/
 https://zhang-weiming.github.io/post/socket/spring/2023-06-02/socket_nginx_ssl/

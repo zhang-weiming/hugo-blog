@@ -2,7 +2,7 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>https://zhang-weiming.github.io/en/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>https://zhang-weiming.github.io/en/categories/</loc><lastmod>2023-10-13T20:36:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="zh-cn"
             href="https://zhang-weiming.github.io/categories/"
@@ -11,7 +11,52 @@
           hreflang="en"
           href="https://zhang-weiming.github.io/en/categories/"
           /></url><url>
-      <loc>https://zhang-weiming.github.io/en/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>https://zhang-weiming.github.io/en/tags/metrics/</loc><lastmod>2023-10-13T20:36:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            rel="alternate"
+            hreflang="zh-cn"
+            href="https://zhang-weiming.github.io/tags/metrics/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://zhang-weiming.github.io/en/tags/metrics/"
+          /></url><url>
+      <loc>https://zhang-weiming.github.io/en/post/</loc><lastmod>2023-10-13T20:36:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            rel="alternate"
+            hreflang="zh-cn"
+            href="https://zhang-weiming.github.io/post/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://zhang-weiming.github.io/en/post/"
+          /></url><url>
+      <loc>https://zhang-weiming.github.io/en/tags/sonarqube/</loc><lastmod>2023-10-13T20:36:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            rel="alternate"
+            hreflang="zh-cn"
+            href="https://zhang-weiming.github.io/tags/sonarqube/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://zhang-weiming.github.io/en/tags/sonarqube/"
+          /></url><url>
+      <loc>https://zhang-weiming.github.io/en/categories/sonarqube/</loc><lastmod>2023-10-13T20:36:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            rel="alternate"
+            hreflang="zh-cn"
+            href="https://zhang-weiming.github.io/categories/sonarqube/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://zhang-weiming.github.io/en/categories/sonarqube/"
+          /></url><url>
+      <loc>https://zhang-weiming.github.io/en/post/sonarqube/metrics/</loc><lastmod>2023-10-13T20:36:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            rel="alternate"
+            hreflang="zh-cn"
+            href="https://zhang-weiming.github.io/post/sonarqube/metrics/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://zhang-weiming.github.io/en/post/sonarqube/metrics/"
+          /></url><url>
+      <loc>https://zhang-weiming.github.io/en/tags/</loc><lastmod>2023-10-13T20:36:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="zh-cn"
             href="https://zhang-weiming.github.io/tags/"
@@ -20,7 +65,7 @@
           hreflang="en"
           href="https://zhang-weiming.github.io/en/tags/"
           /></url><url>
-      <loc>https://zhang-weiming.github.io/en/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>https://zhang-weiming.github.io/en/</loc><lastmod>2023-10-13T20:36:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="zh-cn"
             href="https://zhang-weiming.github.io/"

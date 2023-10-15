@@ -4,7 +4,23 @@
     <link>https://zhang-weiming.github.io/tags/</link>
     <description>Tags - 标签 - 张大锅</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
-      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 13 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 14 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>DST</title>
+  <link>https://zhang-weiming.github.io/tags/dst/</link>
+  <pubDate>Sat, 14 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/tags/dst/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>server</title>
+  <link>https://zhang-weiming.github.io/tags/server/</link>
+  <pubDate>Sat, 14 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/tags/server/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>metrics</title>
   <link>https://zhang-weiming.github.io/tags/metrics/</link>
   <pubDate>Fri, 13 Oct 2023 00:00:00 &#43;0000</pubDate>
@@ -66,22 +82,6 @@
   <pubDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</pubDate>
   <author>张大锅</author>
   <guid>https://zhang-weiming.github.io/tags/socket/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>spring</title>
-  <link>https://zhang-weiming.github.io/tags/spring/</link>
-  <pubDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/tags/spring/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>springboot</title>
-  <link>https://zhang-weiming.github.io/tags/springboot/</link>
-  <pubDate>Fri, 02 Jun 2023 20:30:04 &#43;0800</pubDate>
-  <author>张大锅</author>
-  <guid>https://zhang-weiming.github.io/tags/springboot/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

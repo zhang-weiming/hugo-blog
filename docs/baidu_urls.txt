@@ -1,3 +1,4 @@
+https://zhang-weiming.github.io/post/games/dst/dedicated-server/
 https://zhang-weiming.github.io/post/sonarqube/metrics/
 https://zhang-weiming.github.io/post/minio/installation/
 https://zhang-weiming.github.io/post/tutorial/nvm/nvm_installation/

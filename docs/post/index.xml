@@ -10,6 +10,15 @@
     <webMaster>1210500550@qq.com (张大锅)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://zhang-weiming.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>搭建饥荒联机版Linux服务器</title>
+      <link>https://zhang-weiming.github.io/post/games/dst/dedicated-server/</link>
+      <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
+      <author>1210500550@qq.com (张大锅)</author>
+      <guid>https://zhang-weiming.github.io/post/games/dst/dedicated-server/</guid>
+      <description>&lt;p&gt;在 Ubuntu 系统中搭建饥荒联机版服务器。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>SonarQube 指标</title>
       <link>https://zhang-weiming.github.io/post/sonarqube/metrics/</link>
       <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>

@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>server - 标签 - 张大锅</title>
+    <link>https://zhang-weiming.github.io/tags/server/</link>
+    <description>server - 标签 - 张大锅</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1210500550@qq.com (张大锅)</managingEditor>
+      <webMaster>1210500550@qq.com (张大锅)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 14 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://zhang-weiming.github.io/tags/server/" rel="self" type="application/rss+xml" /><item>
+  <title>搭建饥荒联机版Linux服务器</title>
+  <link>https://zhang-weiming.github.io/post/games/dst/dedicated-server/</link>
+  <pubDate>Sat, 14 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>张大锅</author>
+  <guid>https://zhang-weiming.github.io/post/games/dst/dedicated-server/</guid>
+  <description><![CDATA[<p>在 Ubuntu 系统中搭建饥荒联机版服务器。</p>]]></description>
+</item>
+</channel>
+</rss>
